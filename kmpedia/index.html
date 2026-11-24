@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="KMPedia KMtek - Pusat Pengetahuan IoT &amp; Teknologi: Artikel mendalam seputar sensor, mikrokontroler ESP32, AI, Robotika industri, dan digitalisasi manufaktur." />
   <title>KMPedia - Pusat Pengetahuan &amp; Artikel Teknologi IoT KMtek</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kmtek-v1.vercel.app/kmpedia" />
+  <meta property="og:title" content="KMPedia - Pusat Artikel & Wawasan Teknologi IoT KMtek" />
+  <meta property="og:description" content="Kumpulan artikel mendalam seputar sensor, ESP32, AI, robotika industri, data center, dan transformasi digital manufaktur." />
+  <meta property="og:image" content="https://kmtek-v1.vercel.app/assets/images/kmpedia-hero-featured.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KMPedia - Pusat Artikel & Wawasan Teknologi IoT KMtek" />
+  <meta name="twitter:description" content="Kumpulan artikel mendalam seputar sensor, ESP32, AI, robotika industri, data center, dan transformasi digital manufaktur." />
+  <meta name="twitter:image" content="https://kmtek-v1.vercel.app/assets/images/kmpedia-hero-featured.png" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -536,6 +549,13 @@
               <p>Langkah awal transformasi digital pabrik dimulai dari retrofitting sensor telemetri pada mesin warisan (*legacy machines*) tanpa harus mengganti keseluruhan lini produksi, menghasilkan penghematan biaya investasi hingga 70%.</p>
             </div>
           </article>
+
+          <!-- Empty State when no articles match filter -->
+          <div class="kmpedia-empty-state" style="display: none; grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; color: #64748b; background: #f8fafc; border-radius: 12px; border: 1px dashed #cbd5e1;">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;" aria-hidden="true">🔎</div>
+            <h4 style="font-size: 1.1rem; color: #1e293b; margin-bottom: 0.35rem; font-weight: 700;">Tidak ada artikel ditemukan</h4>
+            <p style="font-size: 0.9rem; color: #64748b;">Coba cari dengan kata kunci lain atau pilih kategori "Semua".</p>
+          </div>
 
         </div>
 

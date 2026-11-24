@@ -205,6 +205,13 @@
         }
       });
     }
+
+    // Update empty state if on KMPedia
+    const emptyEl = document.querySelector('.kmpedia-empty-state');
+    if (emptyEl) {
+      const anyVisible = Array.from(document.querySelectorAll('.kmpedia-card')).some(c => c.style.display !== 'none');
+      emptyEl.style.display = anyVisible ? 'none' : 'block';
+    }
   }
 
   const tabButtons = document.querySelectorAll('.view-tab');
@@ -249,6 +256,7 @@
     searchInput.addEventListener('input', function () {
       const query = this.value.toLowerCase().trim();
       const cards = document.querySelectorAll('.hardware-card, .service-card, .course-card, .kmpedia-card');
+      let visibleCount = 0;
 
       cards.forEach((card) => {
         const title = (card.querySelector('h3, .hardware-card__title, .service-card__title, .course-card__title, .kmpedia-card__title') || {}).textContent || '';
@@ -259,10 +267,16 @@
 
         if (!query || fullText.includes(query)) {
           card.style.display = '';
+          visibleCount++;
         } else {
           card.style.display = 'none';
         }
       });
+
+      const emptyEl = document.querySelector('.kmpedia-empty-state');
+      if (emptyEl) {
+        emptyEl.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
     });
   }
 
@@ -402,28 +416,31 @@
       const serviceName = serviceBtn.getAttribute('data-service-name') || 'Layanan KMTek';
 
       const content = `
-        <form class="modal-form" onsubmit="event.preventDefault(); alert('Terima kasih! Permohonan konsultasi Anda untuk program ' + this.service.value + ' telah terkirim. Tim KMTek akan segera menghubungi Anda.'); closeModal();">
+        <form class="modal-form" onsubmit="event.preventDefault(); const p = this.service.value; const n = this.name.value; const i = this.institution.value; const c = this.contact.value; const note = this.notes ? this.notes.value : ''; const msg = 'Halo KMtek, saya ingin mendaftar/konsultasi program:\\n• Program: ' + p + '\\n• Nama: ' + n + '\\n• Institusi/Instansi: ' + i + '\\n• Kontak: ' + c + (note ? ('\\n• Catatan: ' + note) : ''); window.open('https://wa.me/6281234567890?text=' + encodeURIComponent(msg), '_blank'); closeModal();">
           <div class="form-group">
             <label class="form-label">Program Layanan / Kemitraan</label>
             <input type="text" name="service" class="form-input" value="${serviceName}" readonly style="background:#f1f5f9; font-weight:600;" />
           </div>
           <div class="form-group">
-            <label class="form-label">Nama Lengkap</label>
-            <input type="text" required class="form-input" placeholder="Masukkan nama lengkap Anda" />
+            <label class="form-label">Nama Lengkap *</label>
+            <input type="text" name="name" required class="form-input" placeholder="Masukkan nama lengkap Anda" />
           </div>
           <div class="form-group">
-            <label class="form-label">Institusi / Sekolah / Perusahaan</label>
-            <input type="text" required class="form-input" placeholder="Nama SMK / Kampus / Perusahaan" />
+            <label class="form-label">Institusi / Sekolah / Perusahaan *</label>
+            <input type="text" name="institution" required class="form-input" placeholder="Nama SMK / Kampus / Perusahaan" />
           </div>
           <div class="form-group">
-            <label class="form-label">Nomor WhatsApp &amp; Email</label>
-            <input type="text" required class="form-input" placeholder="08xxxxxxxxxx / nama@domain.com" />
+            <label class="form-label">Nomor WhatsApp &amp; Email *</label>
+            <input type="text" name="contact" required class="form-input" placeholder="08xxxxxxxxxx / nama@domain.com" />
           </div>
           <div class="form-group">
             <label class="form-label">Catatan Tambahan / Kebutuhan Khusus</label>
-            <textarea class="form-textarea" placeholder="Ceritakan kebutuhan pelatihan, magang guru, atau kolaborasi Anda..."></textarea>
+            <textarea name="notes" class="form-textarea" placeholder="Ceritakan kebutuhan pelatihan, magang guru, atau kolaborasi Anda..."></textarea>
           </div>
-          <button type="submit" class="btn btn--primary" style="margin-top: 0.5rem; width: 100%;">Kirim Pengajuan Konsultasi</button>
+          <button type="submit" class="btn btn--primary" style="margin-top: 0.5rem; width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            <span>💬</span>
+            <span>Kirim via WhatsApp Resmi</span>
+          </button>
         </form>
       `;
 
