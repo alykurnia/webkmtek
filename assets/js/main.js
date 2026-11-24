@@ -466,6 +466,36 @@
     }
   });
 
+  // E. KMPedia Gallery Photo Viewer Modal
+  document.addEventListener('click', (e) => {
+    const galleryCard = e.target.closest('.js-open-gallery-modal');
+    if (galleryCard) {
+      e.preventDefault();
+      const title = galleryCard.getAttribute('data-gallery-title') || 'Dokumentasi Kegiatan';
+      const desc = galleryCard.getAttribute('data-gallery-desc') || '';
+      const imgSrc = galleryCard.getAttribute('data-gallery-img') || '';
+      const tag = galleryCard.getAttribute('data-gallery-tag') || 'Teaching Factory';
+
+      const content = `
+        <div style="margin-bottom: 1.25rem; border-radius: 10px; overflow: hidden; background: #000000; text-align: center;">
+          <img src="${imgSrc}" alt="${title}" style="max-width: 100%; max-height: 65vh; object-fit: contain; display: block; margin: 0 auto;" />
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+          <span style="display: inline-block; background: #fee2e2; color: #dc2626; font-size: 0.8rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 999px;">${tag}</span>
+          <span style="font-size: 0.82rem; color: #64748b; font-weight: 600;">SMK Negeri 2 Yogyakarta &times; KMtek</span>
+        </div>
+        <p style="font-size: 0.95rem; color: #334155; line-height: 1.6; margin-bottom: 1.25rem;">${desc}</p>
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
+          <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20tertarik%20mengadakan%20program%20seperti%20${encodeURIComponent(title)}" target="_blank" rel="noopener" class="btn btn--primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+            Konsultasikan Program Ini &rarr;
+          </a>
+        </div>
+      `;
+
+      openModal(title, 'Dokumentasi Lapangan & Aktivitas Edukasi KMtek', content);
+    }
+  });
+
   /* ---------------------------------------------------------------
      9. LIVE WEBINAR COUNTDOWN TIMER (FOR BOOTCAMP.HTML)
   --------------------------------------------------------------- */

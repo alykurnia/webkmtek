@@ -4681,6 +4681,149 @@
   }
 }
 
+/* ============================================================
+   KMPEDIA ACTIVITY GALLERY SECTION
+============================================================ */
+.kmpedia-gallery-section {
+  margin-top: 5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.kmpedia-gallery-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+.kmpedia-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.kmpedia-gallery-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.kmpedia-gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.kmpedia-gallery-card--featured {
+  grid-column: span 2;
+}
+
+.kmpedia-gallery-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.kmpedia-gallery-card--featured .kmpedia-gallery-img-wrap {
+  height: 320px;
+}
+
+.kmpedia-gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.kmpedia-gallery-card:hover .kmpedia-gallery-img {
+  transform: scale(1.05);
+}
+
+.kmpedia-gallery-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.kmpedia-gallery-badge--red {
+  background: #F52929;
+  border: none;
+}
+
+.kmpedia-gallery-body {
+  padding: 1.25rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.kmpedia-gallery-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.4;
+  margin-bottom: 0.45rem;
+}
+
+.kmpedia-gallery-desc {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 0.85rem;
+  flex: 1;
+}
+
+.kmpedia-gallery-meta {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 0.75rem;
+}
+
+@media (max-width: 1024px) {
+  .kmpedia-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .kmpedia-gallery-card--featured {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .kmpedia-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .kmpedia-gallery-card--featured {
+    grid-column: span 1;
+  }
+  .kmpedia-gallery-img-wrap,
+  .kmpedia-gallery-card--featured .kmpedia-gallery-img-wrap {
+    height: 200px;
+  }
+}
+
 
 
 
