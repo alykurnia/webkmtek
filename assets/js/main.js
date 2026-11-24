@@ -60,18 +60,17 @@
   --------------------------------------------------------------- */
   function updateActiveNav() {
     const rawPath = window.location.pathname.toLowerCase();
-    const fileName = rawPath.substring(rawPath.lastIndexOf('/') + 1) || 'index.html';
     const navItems = document.querySelectorAll('.nav-header__item');
     const mobileLinks = document.querySelectorAll('.mobile-nav__link');
 
     let activeCategory = 'index';
-    if (fileName.includes('hardware')) {
+    if (rawPath.includes('hardware')) {
       activeCategory = 'hardware';
-    } else if (fileName.includes('services')) {
+    } else if (rawPath.includes('services')) {
       activeCategory = 'services';
-    } else if (fileName.includes('bootcamp')) {
+    } else if (rawPath.includes('bootcamp')) {
       activeCategory = 'bootcamp';
-    } else if (fileName.includes('kmpedia')) {
+    } else if (rawPath.includes('kmpedia')) {
       activeCategory = 'kmpedia';
     }
 
@@ -81,7 +80,7 @@
       if (link) {
         const href = (link.getAttribute('href') || '').toLowerCase();
         if (
-          (activeCategory === 'index' && (href === 'index.html' || href === '#' || href === '#beranda')) ||
+          (activeCategory === 'index' && (href.endsWith('index.html') && !href.includes('/')) || href === '#' || href === '#beranda') ||
           (activeCategory !== 'index' && href.includes(activeCategory))
         ) {
           link.classList.add('is-active');
@@ -92,16 +91,15 @@
     });
 
     // Dropdown sub-links
-    document.querySelectorAll('.nav-dropdown__link, .mobile-nav__sub-link').forEach((subLink) => {
+    const currentSegment = rawPath.split('/').filter(Boolean).pop() || 'index.html';
+    document.querySelectorAll('.maker-dropdown-item, .nav-dropdown__link, .mobile-nav__sub-link').forEach((subLink) => {
       const subHref = (subLink.getAttribute('href') || '').toLowerCase();
-      if (subHref === fileName) {
+      if (subHref.endsWith(currentSegment) || (currentSegment === 'index.html' && subHref.includes('index.html'))) {
         subLink.classList.add('is-active');
         subLink.style.fontWeight = '700';
-        subLink.style.color = 'var(--color-primary)';
       } else {
         subLink.classList.remove('is-active');
         subLink.style.fontWeight = '';
-        subLink.style.color = '';
       }
     });
 

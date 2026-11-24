@@ -1,4 +1,17 @@
 {
-  "name": "kmtek-v1",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/hardware.html", "destination": "/hardware", "permanent": true },
+    { "source": "/hardware-maker.html", "destination": "/hardware/maker", "permanent": true },
+    { "source": "/hardware-education.html", "destination": "/hardware/education", "permanent": true },
+    { "source": "/hardware-industry.html", "destination": "/hardware/industry", "permanent": true },
+    { "source": "/services.html", "destination": "/services", "permanent": true },
+    { "source": "/services-training.html", "destination": "/services/training", "permanent": true },
+    { "source": "/services-collab.html", "destination": "/services/collab", "permanent": true },
+    { "source": "/services-bnsp.html", "destination": "/services/bnsp", "permanent": true },
+    { "source": "/bootcamp.html", "destination": "/bootcamp", "permanent": true },
+    { "source": "/bootcamp-webinar.html", "destination": "/bootcamp/webinar", "permanent": true },
+    { "source": "/bootcamp-ecourse.html", "destination": "/bootcamp/ecourse", "permanent": true },
+    { "source": "/kmpedia.html", "destination": "/kmpedia", "permanent": true }
+  ]
 }
