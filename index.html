@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KMTek - Solusi IoT Cerdas untuk Masa Depan. Menghubungkan perangkat, memberdayakan industri dengan intelijen real-time dan infrastruktur edge-to-cloud terintegrasi." />
+  <title>KMTek | Solusi IoT Cerdas untuk Industri &amp; Enterprise</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/views.css" />
+</head>
+<body class="page-maker-body">
+
+    <!-- ============================================================
+       NAVIGATION HEADER (STANDARDIZED MAKER NAVBAR)
+  ============================================================ -->
+  <header class="nav-header maker-nav-header" id="nav-header" role="banner">
+    <div class="container nav-header__inner">
+      <a href="index.html" class="maker-logo" aria-label="KMtek Beranda">
+        <span class="maker-logo-slashes">//</span>
+        <span>KMtek</span>
+        <span class="maker-logo-reg">&reg;</span>
+      </a>
+
+      <nav class="nav-header__nav" aria-label="Navigasi Utama">
+        <ul class="nav-header__list" role="list">
+          <li class="nav-header__item">
+            <a href="index.html" class="nav-header__link maker-nav-link-active">Home</a>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="hardware.html" class="nav-header__link">
+              Hardware
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="hardware-maker.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔧</span>
+                <span>Maker</span>
+              </a>
+              <a href="hardware-education.html" class="maker-dropdown-item" role="menuitem">
+                <span>🎓</span>
+                <span>Education</span>
+              </a>
+              <a href="hardware-industry.html" class="maker-dropdown-item" role="menuitem">
+                <span>🏭</span>
+                <span>Industry</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="hardware.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Hardware &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="services.html" class="nav-header__link">
+              Services
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="services-training.html" class="maker-dropdown-item" role="menuitem">
+                <span>👨‍🏫</span>
+                <span>Training &amp; Magang Guru</span>
+              </a>
+              <a href="services-collab.html" class="maker-dropdown-item" role="menuitem">
+                <span>🤝</span>
+                <span>Collaborations Project</span>
+              </a>
+              <a href="services-bnsp.html" class="maker-dropdown-item" role="menuitem">
+                <span>📜</span>
+                <span>Sertifikasi BNSP</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="services.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Services &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="bootcamp.html" class="nav-header__link">
+              Bootcamp
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="bootcamp-webinar.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔴</span>
+                <span>Webinar Live</span>
+              </a>
+              <a href="bootcamp-ecourse.html" class="maker-dropdown-item" role="menuitem">
+                <span>💻</span>
+                <span>E-Course (On Going)</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="bootcamp.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Bootcamp &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item">
+            <a href="kmpedia.html" class="nav-header__link">KMPedia</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-header__hamburger" aria-label="Buka navigasi menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE NAVIGATION OVERLAY
+  ============================================================ -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav__close" aria-label="Tutup menu">&times;</button>
+    <nav aria-label="Navigasi Mobile" style="width: 100%;">
+      <ul class="mobile-nav__list" role="list">
+        
+        <li class="mobile-nav__item">
+          <a href="index.html" class="mobile-nav__link is-active">Beranda</a>
+        </li>
+
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="hardware.html" class="mobile-nav__link">Hardware</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu hardware">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="hardware-maker.html" class="mobile-nav__sub-link">for Maker (Mappi32 &amp; Modul)</a>
+            <a href="hardware-education.html" class="mobile-nav__sub-link">for Education (IoT Kit)</a>
+            <a href="hardware-industry.html" class="mobile-nav__sub-link">for Industry (Basic Mertani)</a>
+            <a href="hardware.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Hardware &rarr;</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="services.html" class="mobile-nav__link">Services</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu services">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="services-training.html" class="mobile-nav__sub-link">Training &amp; Magang Guru</a>
+            <a href="services-collab.html" class="mobile-nav__sub-link">Collaborations Project &amp; TEFA</a>
+            <a href="services-bnsp.html" class="mobile-nav__sub-link">Sertifikasi BNSP (Hardware &amp; Platform)</a>
+            <a href="services.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Services &rarr;</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="bootcamp.html" class="mobile-nav__link">Bootcamp</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu bootcamp">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="bootcamp-webinar.html" class="mobile-nav__sub-link">Webinar Live</a>
+            <a href="bootcamp-ecourse.html" class="mobile-nav__sub-link">E-Course (Modul, Video, Test, Sertifikat)</a>
+            <a href="bootcamp.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Bootcamp &rarr;</a>
+          </div>
+        </li>
+
+        <li class="mobile-nav__item">
+          <a href="kmpedia.html" class="mobile-nav__link">KMPedia</a>
+        </li>
+
+      </ul>
+      <a href="#cta-band" class="btn btn--primary mobile-nav__cta js-open-service-modal" data-service-name="Konsultasi Solusi IoT KMTek" style="width: 100%; margin-top: 1.5rem;">
+        Mulai Sekarang
+      </a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero" aria-label="Hero – Solusi IoT Cerdas">
+      <div class="container hero__inner">
+        <div class="hero__badge" aria-label="Status Platform Langsung dan Inovasi IoT">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Platform Aktif · Inovasi IoT Terdepan
+        </div>
+
+        <h1 class="hero__headline">
+          Solusi IoT Cerdas<br />untuk Masa Depan
+        </h1>
+
+        <p class="hero__sub">
+          Menghubungkan miliaran data perangkat, memberdayakan industri dan pendidikan vokasi dengan analitik real-time dan infrastruktur edge-to-cloud terpadu.
+        </p>
+
+        <div class="hero__accent-line" aria-hidden="true"></div>
+
+        <div class="hero__ctas">
+          <a href="hardware.html" class="btn btn--pill btn--primary hero__cta-primary">Katalog Hardware</a>
+          <a href="services.html" class="btn btn--pill btn--ghost hero__cta-secondary">Layanan &amp; Kemitraan</a>
+        </div>
+
+        <div class="hero__trust-pills" aria-label="Kepercayaan Klien">
+          <span class="hero__trust-pill">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="7" fill="#F52929" opacity="0.2"/><circle cx="7" cy="7" r="4" fill="#F52929"/></svg>
+            500+ Mitra Industri &amp; Pendidikan
+          </span>
+          <span class="hero__trust-pill">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="7" fill="#F52929" opacity="0.2"/><circle cx="7" cy="7" r="4" fill="#F52929"/></svg>
+            99.9% Jaminan Uptime
+          </span>
+        </div>
+
+        <div class="hero__scroll-indicator" aria-hidden="true">
+          <span class="hero__scroll-text">Gulir ke Bawah</span>
+          <div class="hero__scroll-arrow"></div>
+        </div>
+      </div>
+
+      <div class="hero__bg-deco" aria-hidden="true">
+        <div class="hero__bg-deco-circle hero__bg-deco-circle--1"></div>
+        <div class="hero__bg-deco-circle hero__bg-deco-circle--2"></div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats" id="stats" aria-label="Statistik Perusahaan">
+      <div class="container stats__inner">
+        <div class="stats__item" data-animate>
+          <span class="stats__number">500+</span>
+          <span class="stats__label">Klien Aktif</span>
+        </div>
+        <div class="stats__item" data-animate>
+          <span class="stats__number">1,000+</span>
+          <span class="stats__label">Perangkat Terpasang</span>
+        </div>
+        <div class="stats__item" data-animate>
+          <span class="stats__number">99.9%</span>
+          <span class="stats__label">Jaminan Uptime</span>
+        </div>
+        <div class="stats__item" data-animate>
+          <span class="stats__number">10+</span>
+          <span class="stats__label">Tahun Pengalaman</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS SECTION -->
+    <section class="solutions" id="solutions" aria-label="Solusi Kami">
+      <div class="container solutions__inner">
+        <div class="section-header section-header--light">
+          <p class="section-header__eyebrow">Layanan &amp; Kemampuan</p>
+          <h2 class="section-header__title">Solusi Kami</h2>
+          <p class="section-header__desc">
+            Platform IoT terintegrasi dari hulu ke hilir yang dirancang untuk keandalan maksimal, skalabilitas masif, dan kemudahan implementasi.
+          </p>
+        </div>
+
+        <div class="solutions__grid" role="list">
+          <article class="solution-card" role="listitem" data-animate>
+            <div class="solution-card__number" aria-hidden="true">01</div>
+            <div class="solution-card__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect x="4" y="4" width="32" height="32" rx="4" stroke="#F52929" stroke-width="2" fill="none"/>
+                <rect x="10" y="16" width="6" height="14" fill="#F52929" opacity="0.7"/>
+                <rect x="18" y="10" width="6" height="20" fill="#F52929"/>
+                <rect x="26" y="20" width="6" height="10" fill="#F52929" opacity="0.5"/>
+              </svg>
+            </div>
+            <h3 class="solution-card__title">Smart Manufacturing</h3>
+            <p class="solution-card__desc">
+              Pemantauan lini produksi secara real-time, deteksi anomali dini, dan pemeliharaan prediktif otomatis untuk menjaga efisiensi pabrik tetap optimal.
+            </p>
+            <a href="services.html" class="solution-card__link">Pelajari Selengkapnya &rarr;</a>
+          </article>
+
+          <article class="solution-card" role="listitem" data-animate>
+            <div class="solution-card__number" aria-hidden="true">02</div>
+            <div class="solution-card__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect x="2" y="22" width="36" height="10" rx="3" stroke="#F52929" stroke-width="2" fill="none"/>
+                <circle cx="10" cy="32" r="4" stroke="#F52929" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="32" r="4" stroke="#F52929" stroke-width="2" fill="none"/>
+                <path d="M8 22 L14 10 L28 10 L36 22" stroke="#F52929" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="solution-card__title">Fleet Management</h3>
+            <p class="solution-card__desc">
+              Lacak, kelola, dan optimalkan seluruh armada logistik Anda dengan telemetri GPS presisi tinggi, analitik perilaku pengemudi, serta rute cerdas.
+            </p>
+            <a href="services.html" class="solution-card__link">Pelajari Selengkapnya &rarr;</a>
+          </article>
+
+          <article class="solution-card" role="listitem" data-animate>
+            <div class="solution-card__number" aria-hidden="true">03</div>
+            <div class="solution-card__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M20 4 L36 14 L36 36 L4 36 L4 14 Z" stroke="#F52929" stroke-width="2" fill="none"/>
+                <rect x="14" y="22" width="6" height="14" fill="#F52929" opacity="0.7"/>
+                <rect x="22" y="22" width="6" height="14" fill="#F52929" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3 class="solution-card__title">Smart Building</h3>
+            <p class="solution-card__desc">
+              Pengaturan suhu cerdas, pemantauan efisiensi konsumsi listrik, dan manajemen akses terpadu guna mewujudkan gedung pintar yang aman dan hemat daya.
+            </p>
+            <a href="services.html" class="solution-card__link">Pelajari Selengkapnya &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products" id="products" aria-label="Produk Unggulan">
+      <div class="container products__inner">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Perangkat Keras &amp; Perangkat Lunak</p>
+          <h2 class="section-header__title">Produk Unggulan</h2>
+          <p class="section-header__desc">
+            Kombinasi perangkat keras berstandar industri dan platform cloud modern yang dirancang untuk ketahanan operasional tanpa henti.
+          </p>
+        </div>
+
+        <div class="products__grid" role="list">
+          <article class="product-card" role="listitem" data-animate>
+            <div class="product-card__accent-bar" aria-hidden="true"></div>
+            <div class="product-card__body">
+              <div class="product-card__badge product-card__badge--new">Paling Populer</div>
+              <div class="product-card__icon" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <rect x="4" y="8" width="40" height="32" rx="4" stroke="#F52929" stroke-width="2" fill="none"/>
+                  <rect x="10" y="14" width="10" height="8" rx="2" fill="#F52929" opacity="0.2"/>
+                  <circle cx="34" cy="18" r="4" fill="#F52929" opacity="0.15"/>
+                </svg>
+              </div>
+              <h3 class="product-card__name">KM Edge Gateway</h3>
+              <p class="product-card__desc">Gateway IoT kelas industri dengan kemampuan komputasi tepi (edge computing) untuk pemrosesan data real-time langsung di lokasi.</p>
+              <ul class="product-card__specs">
+                <li>Prosesor Quad-Core ARM Cortex-A53</li>
+                <li>Mendukung protokol MQTT, CoAP, dan Modbus</li>
+                <li>Casing tahan cuaca bersertifikasi IP67</li>
+              </ul>
+              <a href="hardware-industry.html" class="btn btn--primary product-card__btn">Lihat Detail Hardware</a>
+            </div>
+          </article>
+
+          <article class="product-card" role="listitem" data-animate>
+            <div class="product-card__accent-bar" aria-hidden="true"></div>
+            <div class="product-card__body">
+              <div class="product-card__icon" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <rect x="14" y="4" width="20" height="40" rx="4" stroke="#F52929" stroke-width="2" fill="none"/>
+                  <circle cx="24" cy="38" r="2" fill="#F52929"/>
+                </svg>
+              </div>
+              <h3 class="product-card__name">KM Sense Pro</h3>
+              <p class="product-card__desc">Modul multi-sensor kompak yang menggabungkan pembacaan suhu, kelembapan, getaran mekanis, dan kualitas udara dalam satu unit mandiri.</p>
+              <ul class="product-card__specs">
+                <li>Sensor lingkungan terpadu presisi tinggi</li>
+                <li>Daya tahan baterai hingga 5 tahun (LoRaWAN)</li>
+                <li>Pembaruan firmware nirkabel over-the-air (OTA)</li>
+              </ul>
+              <a href="hardware-maker.html" class="btn btn--primary product-card__btn">Lihat Detail Hardware</a>
+            </div>
+          </article>
+
+          <article class="product-card" role="listitem" data-animate>
+            <div class="product-card__accent-bar" aria-hidden="true"></div>
+            <div class="product-card__body">
+              <div class="product-card__icon" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <path d="M24 4 C12.95 4 4 12.95 4 24 S12.95 44 24 44 S44 35.05 44 24 S35.05 4 24 4Z" stroke="#F52929" stroke-width="2" fill="none"/>
+                  <circle cx="24" cy="24" r="4" fill="#F52929"/>
+                </svg>
+              </div>
+              <h3 class="product-card__name">KM Cloud Platform</h3>
+              <p class="product-card__desc">Dashboard terpusat untuk monitoring armada perangkat, otomatisasi alur kerja analitik, sistem notifikasi cerdas, dan integrasi REST API.</p>
+              <ul class="product-card__specs">
+                <li>Kelola 100.000+ perangkat dari satu antarmuka</li>
+                <li>Dukungan REST, Webhook &amp; MQTT Broker</li>
+                <li>SLA 99.9% uptime dengan proteksi TLS</li>
+              </ul>
+              <a href="services-bnsp.html" class="btn btn--primary product-card__btn">Pelajari Platform</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY KMTEK SECTION -->
+    <section class="why-kmtek" id="why-kmtek" aria-label="Mengapa Memilih KMTek">
+      <div class="container why-kmtek__inner">
+        <div class="section-header section-header--white">
+          <p class="section-header__eyebrow">Nilai Lebih Kami</p>
+          <h2 class="section-header__title">Mengapa Memilih KMTek?</h2>
+          <p class="section-header__desc">
+            Kami bukan sekadar penyedia sensor dan perangkat — kami membangun ekosistem IoT menyeluruh yang siap pakai dengan fondasi rekayasa teknik kelas dunia.
+          </p>
+        </div>
+
+        <div class="why-kmtek__grid" role="list">
+          <div class="why-item" role="listitem" data-animate>
+            <div class="why-item__icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 2 L28 7 L28 16 C28 22.627 22.627 28 16 28 C9.373 28 4 22.627 4 16 L4 7 Z" stroke="white" stroke-width="2"/><path d="M11 16 L14 19 L21 12" stroke="white" stroke-width="2"/></svg>
+            </div>
+            <div class="why-item__body">
+              <h3 class="why-item__title">Keandalan Teruji</h3>
+              <p class="why-item__desc">Tingkat ketersediaan tinggi dengan arsitektur server redundan dan sistem pemantauan proaktif tanpa henti 24/7.</p>
+            </div>
+          </div>
+          <hr class="why-item__separator" />
+
+          <div class="why-item" role="listitem" data-animate>
+            <div class="why-item__icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="6" stroke="white" stroke-width="2"/><path d="M16 2 L16 6 M16 26 L16 30 M2 16 L6 16 M26 16 L30 16" stroke="white" stroke-width="2"/></svg>
+            </div>
+            <div class="why-item__body">
+              <h3 class="why-item__title">Inovasi Berkelanjutan</h3>
+              <p class="why-item__desc">Investasi riset &amp; pengembangan yang konsisten memastikan Anda selalu mendapatkan teknologi IoT generasi terdepan.</p>
+            </div>
+          </div>
+          <hr class="why-item__separator" />
+
+          <div class="why-item" role="listitem" data-animate>
+            <div class="why-item__icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M20 14 C20 17.314 17.314 20 14 20 C10.686 20 8 17.314 8 14 C8 10.686 10.686 8 14 8 C17.314 8 20 10.686 20 14Z" stroke="white" stroke-width="2"/><path d="M22 22 L28 28" stroke="white" stroke-width="2"/></svg>
+            </div>
+            <div class="why-item__body">
+              <h3 class="why-item__title">Dukungan Ahli</h3>
+              <p class="why-item__desc">Tim insinyur lokal dan konsultan teknis berpengalaman yang siap mendampingi implementasi dari tahap awal hingga skala penuh.</p>
+            </div>
+          </div>
+          <hr class="why-item__separator" />
+
+          <div class="why-item" role="listitem" data-animate>
+            <div class="why-item__icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M4 24 L10 16 L16 20 L22 10 L28 14" stroke="white" stroke-width="2"/></svg>
+            </div>
+            <div class="why-item__body">
+              <h3 class="why-item__title">Skalabilitas Mudah</h3>
+              <p class="why-item__desc">Infrastruktur modular yang tumbuh fleksibel bersama bisnis Anda — dari 10 titik pantau hingga 100.000+ perangkat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials" aria-label="Testimoni Klien">
+      <div class="container testimonials__inner">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Kisah Sukses Klien</p>
+          <h2 class="section-header__title">Apa Kata Klien Kami</h2>
+          <p class="section-header__desc">
+            Dipercaya oleh para pemimpin industri manufaktur, armada transportasi, dan institusi pendidikan vokasi.
+          </p>
+        </div>
+
+        <div class="testimonials__grid" role="list">
+          <blockquote class="testimonial-card" role="listitem" data-animate>
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              "Gateway KMTek berhasil mengurangi downtime mesin pabrik kami sebesar 40% pada kuartal pertama. Fitur alert real-time saja sudah menghasilkan ROI investasi penuh dalam 6 bulan."
+            </p>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar">JL</div>
+              <div>
+                <cite class="testimonial-card__name">James Lim</cite>
+                <span class="testimonial-card__company">VP Operations, NexaManufacturing</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" role="listitem" data-animate>
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              "Board Mappi32 dan IoT Kit KMTek sangat membantu proses pembelajaran praktikum siswa SMK kami. Modul pembelajarannya sangat lengkap dan mudah dipahami."
+            </p>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar">SR</div>
+              <div>
+                <cite class="testimonial-card__name">Drs. Suryono</cite>
+                <span class="testimonial-card__company">Kepala Program Keahlian Elektronika SMK Vokasi</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" role="listitem" data-animate>
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              "Implementasi sensor lingkungan industri Mertani dan gateway KMTek menurunkan biaya inspeksi lapangan hingga 50%. Data telemetri akurat dan stabil 24/7."
+            </p>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar">DC</div>
+              <div>
+                <cite class="testimonial-card__name">David Chen</cite>
+                <span class="testimonial-card__company">Facilities Director, PrimeTower REIT</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND SECTION -->
+    <section class="cta-band" id="cta-band" aria-label="Ajakan Bertindak">
+      <div class="container cta-band__inner">
+        <div class="cta-band__content">
+          <h2 class="cta-band__headline">Siap Mentransformasi<br />Bisnis &amp; Edukasi Anda?</h2>
+          <p class="cta-band__sub">
+            Konsultasikan tantangan operasional, kebutuhan kit pembelajaran, atau sertifikasi BNSP bersama tim ahli KMTek.
+          </p>
+          <form class="cta-band__form" onsubmit="event.preventDefault(); alert('Terima kasih! Kami akan segera menghubungi email Anda.');">
+            <input type="email" placeholder="Masukkan alamat email bisnis atau institusi Anda" class="cta-band__email-input" aria-label="Alamat email bisnis" required />
+            <button type="submit" class="btn btn--primary">Konsultasi Gratis</button>
+          </form>
+          <p class="cta-band__privacy">Atau hubungi tim kami via email di <a href="mailto:hello@kmtek.io" class="cta-band__email-link">hello@kmtek.io</a></p>
+        </div>
+        <div class="cta-band__deco" aria-hidden="true">
+          <div class="cta-band__deco-text">IoT</div>
+          <div class="cta-band__deco-block cta-band__deco-block--1"></div>
+          <div class="cta-band__deco-block cta-band__deco-block--2"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       MODAL OVERLAY
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Tutup jendela modal">&times;</button>
+      <h3 class="modal-title" id="modal-title">Judul Modal</h3>
+      <p class="modal-subtitle" id="modal-subtitle">Subjudul modal informasi.</p>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__newsletter-strip">
+      <div class="container footer__newsletter-inner">
+        <div class="footer__newsletter-text">
+          <strong>Tetap Terinformasi.</strong> Dapatkan wawasan tren IoT, peluncuran produk hardware terbaru, dan jadwal sertifikasi BNSP langsung di email Anda.
+        </div>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih! Anda telah terdaftar.');" aria-label="Langganan newsletter">
+          <input type="email" placeholder="Alamat email Anda" class="footer__newsletter-input" aria-label="Email untuk newsletter" required />
+          <button type="submit" class="btn btn--primary">Berlangganan</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__inner">
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="KMTek Beranda">
+            <span class="footer__logo-km">KM</span><span class="footer__logo-tek">Tek</span>
+          </a>
+          <p class="footer__tagline">
+            Menghubungkan perangkat,<br />memberdayakan industri &amp; edukasi.
+          </p>
+          <div class="footer__socials" role="list" aria-label="Tautan media sosial">
+            <a href="#" role="listitem" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="Twitter/X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.907l4.274 5.65zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Tautan Hardware">
+          <h3 class="footer__col-heading">Hardware</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="hardware-maker.html" class="footer__link">for Maker (Mappi32)</a></li>
+            <li><a href="hardware-maker.html" class="footer__link">Modul &amp; Antena IoT</a></li>
+            <li><a href="hardware-education.html" class="footer__link">for Education (IoT Kit)</a></li>
+            <li><a href="hardware-industry.html" class="footer__link">for Industry (Basic Mertani)</a></li>
+            <li><a href="hardware.html" class="footer__link">Katalog Shop Mitra</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Services">
+          <h3 class="footer__col-heading">Services</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="services-training.html" class="footer__link">Magang Guru SMK &amp; Dosen</a></li>
+            <li><a href="services-training.html" class="footer__link">Training on Demand</a></li>
+            <li><a href="services-collab.html" class="footer__link">Pengembangan Produk IoT</a></li>
+            <li><a href="services-collab.html" class="footer__link">Teaching Factory (TEFA)</a></li>
+            <li><a href="services-bnsp.html" class="footer__link">Sertifikasi Profesi BNSP</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Bootcamp">
+          <h3 class="footer__col-heading">Bootcamp &amp; Belajar</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="bootcamp-webinar.html" class="footer__link">Webinar Live Streaming</a></li>
+            <li><a href="bootcamp-ecourse.html" class="footer__link">E-Course Bersertifikat</a></li>
+            <li><a href="kmpedia.html" class="footer__link">KMPedia IoT Hub</a></li>
+            <li><a href="kmpedia.html" class="footer__link">Glosarium Istilah IoT</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Kontak">
+          <h3 class="footer__col-heading">Hubungi Kami</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="#cta-band" class="footer__link js-open-service-modal" data-service-name="Konsultasi Penjualan &amp; Kerjasama">Konsultasi Penjualan</a></li>
+            <li><a href="services-collab.html" class="footer__link">Kemitraan Toko / Reseller</a></li>
+            <li><a href="mailto:hello@kmtek.io" class="footer__link">Email: hello@kmtek.io</a></li>
+            <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="footer__link">WhatsApp Layanan Cepat</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="footer-year"></span> KMTek. Seluruh hak cipta dilindungi undang-undang.
+        </p>
+        <nav class="footer__legal" aria-label="Tautan Legalitas">
+          <a href="#" class="footer__legal-link">Kebijakan Privasi</a>
+          <a href="#" class="footer__legal-link">Syarat &amp; Ketentuan</a>
+          <a href="#" class="footer__legal-link">Kebijakan Cookie</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">&uarr;</button>
+
+  <script src="assets/js/main.js"></script>
+  <!-- Floating Contact Chat Pill -->
+  <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20ingin%20konsultasi%20seputar%20produk%20dan%20layanan%20IoT" target="_blank" rel="noopener" class="floating-chat-pill" aria-label="Hubungi kami melalui WhatsApp">
+    <span aria-hidden="true">&#128172;</span>
+    <span>Let's Chat</span>
+  </a>
+
+</body>
+</html>

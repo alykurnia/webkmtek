@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KMtek Bootcamp: Webinar Live IoT bersama praktisi industri. Belajar implementasi nyata, tanya jawab langsung, dan akses rekaman video setelah acara." />
+  <title>Webinar Live IoT - KMtek Bootcamp</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/views.css" />
+</head>
+<body class="page-maker-body">
+
+    <!-- ============================================================
+       NAVIGATION HEADER (STANDARDIZED MAKER NAVBAR)
+  ============================================================ -->
+  <header class="nav-header maker-nav-header" id="nav-header" role="banner">
+    <div class="container nav-header__inner">
+      <a href="index.html" class="maker-logo" aria-label="KMtek Beranda">
+        <span class="maker-logo-slashes">//</span>
+        <span>KMtek</span>
+        <span class="maker-logo-reg">&reg;</span>
+      </a>
+
+      <nav class="nav-header__nav" aria-label="Navigasi Utama">
+        <ul class="nav-header__list" role="list">
+          <li class="nav-header__item">
+            <a href="index.html" class="nav-header__link">Home</a>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="hardware.html" class="nav-header__link">
+              Hardware
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="hardware-maker.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔧</span>
+                <span>Maker</span>
+              </a>
+              <a href="hardware-education.html" class="maker-dropdown-item" role="menuitem">
+                <span>🎓</span>
+                <span>Education</span>
+              </a>
+              <a href="hardware-industry.html" class="maker-dropdown-item" role="menuitem">
+                <span>🏭</span>
+                <span>Industry</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="hardware.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Hardware &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="services.html" class="nav-header__link">
+              Services
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="services-training.html" class="maker-dropdown-item" role="menuitem">
+                <span>👨‍🏫</span>
+                <span>Training &amp; Magang Guru</span>
+              </a>
+              <a href="services-collab.html" class="maker-dropdown-item" role="menuitem">
+                <span>🤝</span>
+                <span>Collaborations Project</span>
+              </a>
+              <a href="services-bnsp.html" class="maker-dropdown-item" role="menuitem">
+                <span>📜</span>
+                <span>Sertifikasi BNSP</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="services.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Services &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="bootcamp.html" class="nav-header__link maker-nav-link-active" aria-expanded="true">
+              Bootcamp
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" style="stroke: #ffffff;">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="bootcamp-webinar.html" class="maker-dropdown-item is-selected" role="menuitem">
+                <span>🔴</span>
+                <span>Webinar Live</span>
+              </a>
+              <a href="bootcamp-ecourse.html" class="maker-dropdown-item" role="menuitem">
+                <span>💻</span>
+                <span>E-Course (On Going)</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="bootcamp.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Bootcamp &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item">
+            <a href="kmpedia.html" class="nav-header__link">KMPedia</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-header__hamburger" aria-label="Buka navigasi menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE NAVIGATION OVERLAY
+  ============================================================ -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav__close" aria-label="Tutup menu">&times;</button>
+    <nav aria-label="Navigasi Mobile" style="width: 100%;">
+      <ul class="mobile-nav__list" role="list">
+        <li class="mobile-nav__item">
+          <a href="index.html" class="mobile-nav__link">Beranda</a>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="hardware.html" class="mobile-nav__link">Hardware</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu hardware">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="hardware-maker.html" class="mobile-nav__sub-link">🔧 for Maker (Mappi32 &amp; Modul)</a>
+            <a href="hardware-education.html" class="mobile-nav__sub-link">🎓 for Education (IoT Kit)</a>
+            <a href="hardware-industry.html" class="mobile-nav__sub-link">🏭 for Industry (Basic Mertani)</a>
+            <a href="hardware.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Lihat Semua Hardware &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="services.html" class="mobile-nav__link">Services</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu services">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="services-training.html" class="mobile-nav__sub-link">👨‍🏫 Training &amp; Magang Guru</a>
+            <a href="services-collab.html" class="mobile-nav__sub-link">🤝 Collaborations Project &amp; TEFA</a>
+            <a href="services-bnsp.html" class="mobile-nav__sub-link">📜 Sertifikasi BNSP (Hardware &amp; Platform)</a>
+            <a href="services.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Services &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="bootcamp.html" class="mobile-nav__link is-active">Bootcamp</a>
+            <button class="mobile-nav__toggle is-open" aria-label="Toggle submenu bootcamp">▼</button>
+          </div>
+          <div class="mobile-nav__sub is-open">
+            <a href="bootcamp-webinar.html" class="mobile-nav__sub-link is-active" style="color:var(--color-primary); font-weight:700;">🔴 Webinar Live</a>
+            <a href="bootcamp-ecourse.html" class="mobile-nav__sub-link">💻 E-Course (Modul, Video, Test, Sertifikat)</a>
+            <a href="bootcamp.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Bootcamp &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="kmpedia.html" class="mobile-nav__link">KMPedia</a>
+        </li>
+      </ul>
+      <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20tertarik%20dengan%20jadwal%20Webinar%20Live%20Bootcamp" target="_blank" rel="noopener" class="btn btn--primary mobile-nav__cta" style="width: 100%; margin-top: 1.5rem; border-radius: 999px;">
+        Contact &#8599;
+      </a>
+    </nav>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT: WEBINAR LIVE (EXACT MOCKUP)
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION (DARK CINEMA / STUDIO STAGE) -->
+    <section class="webinar-hero-section">
+      <div class="container webinar-hero-container">
+
+        <!-- Left Column: Copy & Actions -->
+        <div>
+          <!-- Live Broadcast Badge -->
+          <div class="webinar-live-badge">
+            <span class="webinar-live-dot" aria-hidden="true"></span>
+            <span>KMtek Bootcamp / Webinar Live</span>
+          </div>
+
+          <h1 class="webinar-hero-heading">
+            Belajar langsung dari praktisi industri<span class="webinar-hero-heading-slash">/</span>
+          </h1>
+
+          <p class="webinar-hero-p">
+            Ikuti sesi webinar live KMtek Bootcamp bersama praktisi IoT. Belajar implementasi nyata, tanya jawab (Q&amp;A) langsung, dan akses rekaman setelah acara.
+          </p>
+
+          <a href="#webinar-mendatang" class="maker-hero-cta-btn">
+            Lihat Jadwal Webinar &rarr;
+          </a>
+        </div>
+
+        <!-- Right Column: Live Monitor Studio Showcase -->
+        <div class="webinar-hero-screen-wrap">
+          <img
+            src="assets/images/webinar-hero-screen.png"
+            alt="Live Streaming Webinar IoT KMtek Bootcamp Bersama Praktisi Industri"
+            class="webinar-hero-screen-img"
+            width="520"
+            height="263"
+            loading="eager"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. WEBINAR MENDATANG SECTION (3 HORIZONTAL CARDS MATCHING MOCKUP) -->
+    <section class="webinar-section" id="webinar-mendatang">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="webinar-section-header">
+          <div>
+            <h2 class="webinar-section-title">Webinar Mendatang</h2>
+            <p class="webinar-section-sub">
+              Ikuti webinar live seputar IoT, dari dasar hingga implementasi industri.
+            </p>
+          </div>
+          <a href="#tonton-rekaman" class="webinar-section-link">
+            Lihat Semua Jadwal &rarr;
+          </a>
+        </div>
+
+        <!-- 3 Horizontal Webinar Cards -->
+        <div class="webinar-list">
+
+          <!-- Card 1: Pengenalan IoT dengan ESP32 -->
+          <article class="webinar-card-row js-open-service-modal" data-service-name="Webinar: Pengenalan IoT dengan ESP32" tabindex="0" role="button" aria-label="Daftar Webinar Pengenalan IoT dengan ESP32">
+            <div class="webinar-card-thumb-box">
+              <img
+                src="assets/images/webinar-thumb-esp32.png"
+                alt="Pengenalan IoT dengan ESP32"
+                class="webinar-card-thumb-img"
+                width="120"
+                height="80"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="webinar-card-info">
+              <span class="webinar-card-badge">Segera Hadir</span>
+              <h3 class="webinar-card-title">Pengenalan IoT dengan ESP32</h3>
+              <p class="webinar-card-desc">
+                Mulai perjalanan IoT-mu dengan memahami konsep dasar, perangkat, dan praktik dengan ESP32.
+              </p>
+            </div>
+
+            <div class="webinar-card-speaker-meta">
+              <div>
+                <div class="webinar-meta-item">
+                  <span>👤</span>
+                  <span>Rizky Pratama</span>
+                </div>
+                <div class="webinar-meta-sub">IoT Engineer</div>
+              </div>
+              <div class="webinar-meta-item">
+                <span>📅</span>
+                <span>Segera Hadir</span>
+              </div>
+            </div>
+
+            <div class="webinar-card-arrow" aria-hidden="true">
+              &rsaquo;
+            </div>
+          </article>
+
+          <!-- Card 2: Membangun Smart Garden dengan IoT -->
+          <article class="webinar-card-row js-open-service-modal" data-service-name="Webinar: Membangun Smart Garden dengan IoT" tabindex="0" role="button" aria-label="Daftar Webinar Membangun Smart Garden dengan IoT">
+            <div class="webinar-card-thumb-box">
+              <img
+                src="assets/images/webinar-thumb-garden.png"
+                alt="Membangun Smart Garden dengan IoT"
+                class="webinar-card-thumb-img"
+                width="120"
+                height="80"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="webinar-card-info">
+              <span class="webinar-card-badge">Segera Hadir</span>
+              <h3 class="webinar-card-title">Membangun Smart Garden dengan IoT</h3>
+              <p class="webinar-card-desc">
+                Studi kasus sistem penyiraman otomatis berbasis sensor dan ESP32.
+              </p>
+            </div>
+
+            <div class="webinar-card-speaker-meta">
+              <div>
+                <div class="webinar-meta-item">
+                  <span>👤</span>
+                  <span>Dewi Lestari</span>
+                </div>
+                <div class="webinar-meta-sub">IoT Developer</div>
+              </div>
+              <div class="webinar-meta-item">
+                <span>📅</span>
+                <span>Segera Hadir</span>
+              </div>
+            </div>
+
+            <div class="webinar-card-arrow" aria-hidden="true">
+              &rsaquo;
+            </div>
+          </article>
+
+          <!-- Card 3: Monitoring Sensor ke Cloud -->
+          <article class="webinar-card-row js-open-service-modal" data-service-name="Webinar: Monitoring Sensor ke Cloud" tabindex="0" role="button" aria-label="Daftar Webinar Monitoring Sensor ke Cloud">
+            <div class="webinar-card-thumb-box">
+              <img
+                src="assets/images/webinar-thumb-cloud.png"
+                alt="Monitoring Sensor ke Cloud"
+                class="webinar-card-thumb-img"
+                width="120"
+                height="80"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="webinar-card-info">
+              <span class="webinar-card-badge">Segera Hadir</span>
+              <h3 class="webinar-card-title">Monitoring Sensor ke Cloud</h3>
+              <p class="webinar-card-desc">
+                Kirim, simpan, dan visualisasikan data sensor ke platform cloud (contoh: Blynk, ThingSpeak).
+              </p>
+            </div>
+
+            <div class="webinar-card-speaker-meta">
+              <div>
+                <div class="webinar-meta-item">
+                  <span>👤</span>
+                  <span>Andi Setiawan</span>
+                </div>
+                <div class="webinar-meta-sub">Solution Architect</div>
+              </div>
+              <div class="webinar-meta-item">
+                <span>📅</span>
+                <span>Segera Hadir</span>
+              </div>
+            </div>
+
+            <div class="webinar-card-arrow" aria-hidden="true">
+              &rsaquo;
+            </div>
+          </article>
+
+        </div>
+
+        <!-- 3. TONTON KEMBALI WEBINAR (REPLAY STRIP MATCHING MOCKUP) -->
+        <div class="webinar-replay-banner" id="tonton-rekaman">
+
+          <!-- Left Info -->
+          <div class="webinar-replay-info">
+            <h3>
+              <!-- Red Play Button SVG -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#F52929" aria-hidden="true">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span>Tonton Kembali Webinar</span>
+            </h3>
+            <p>
+              Lewatkan sesi sebelumnya? Akses rekaman webinar dan pelajari kembali materinya kapan saja.
+            </p>
+          </div>
+
+          <!-- Center 3 Replay Thumbnails -->
+          <div class="webinar-replay-cards-grid">
+
+            <!-- Replay 1 -->
+            <div class="webinar-replay-item js-open-service-modal" data-service-name="Akses Rekaman: Dasar IoT & ESP32">
+              <div class="webinar-replay-thumb-wrap">
+                <img
+                  src="assets/images/webinar-replay-1.png"
+                  alt="Rekaman Webinar Dasar IoT & ESP32"
+                  width="72"
+                  height="38"
+                  loading="lazy"
+                />
+                <span class="webinar-replay-play-badge">&#9658;</span>
+                <span class="webinar-replay-time">1:12:34</span>
+              </div>
+              <div class="webinar-replay-title">Dasar IoT &amp; ESP32</div>
+            </div>
+
+            <!-- Replay 2 -->
+            <div class="webinar-replay-item js-open-service-modal" data-service-name="Akses Rekaman: Smart Garden IoT">
+              <div class="webinar-replay-thumb-wrap">
+                <img
+                  src="assets/images/webinar-replay-2.png"
+                  alt="Rekaman Webinar Smart Garden IoT"
+                  width="72"
+                  height="38"
+                  loading="lazy"
+                />
+                <span class="webinar-replay-play-badge">&#9658;</span>
+                <span class="webinar-replay-time">59:20</span>
+              </div>
+              <div class="webinar-replay-title">Smart Garden IoT</div>
+            </div>
+
+            <!-- Replay 3 -->
+            <div class="webinar-replay-item js-open-service-modal" data-service-name="Akses Rekaman: Kirim Data ke Cloud">
+              <div class="webinar-replay-thumb-wrap">
+                <img
+                  src="assets/images/webinar-replay-3.png"
+                  alt="Rekaman Webinar Kirim Data ke Cloud"
+                  width="65"
+                  height="38"
+                  loading="lazy"
+                />
+                <span class="webinar-replay-play-badge">&#9658;</span>
+                <span class="webinar-replay-time">50:20</span>
+              </div>
+              <div class="webinar-replay-title">Kirim Data ke Cloud</div>
+            </div>
+
+          </div>
+
+          <!-- Right Navigation Button -->
+          <button class="webinar-replay-nav-btn js-open-service-modal" data-service-name="Koleksi Lengkap Arsip Webinar KMtek" aria-label="Lihat seluruh koleksi arsip rekaman webinar">
+            &gt;
+          </button>
+
+        </div>
+
+        <!-- 4. BOTTOM BANNER (FAMILY DESIGN WITH RED ACCENT TRIANGLE) -->
+        <section class="maker-bottom-cta-section" style="margin-top: 3.5rem; margin-bottom: 1rem;" aria-label="In-House Training & Webinar Kampus">
+          <div class="maker-bottom-grid">
+            <div>
+              <h3 class="maker-bottom-heading">
+                <span class="maker-slashes-red">//</span>
+                <span>Mau Sesi Webinar Privat atau In-House Workshop untuk Institusi Anda?</span>
+              </h3>
+              <p class="maker-bottom-text">
+                KMtek menyelenggarakan sesi webinar khusus, workshop praktikum intensif, dan bimbingan proyek IoT langsung dibimbing praktisi industri senior.
+              </p>
+              <div style="margin-top: 1.5rem;">
+                <button class="maker-hero-cta-btn js-open-service-modal" data-service-name="Pengajuan Sesi Webinar Privat Institusi">
+                  Ajukan Sesi Webinar Privat &rarr;
+                </button>
+              </div>
+            </div>
+            <div class="maker-bottom-image-box">
+              <img
+                src="assets/images/maker-bottom-laptop.png"
+                alt="Webinar Privat IoT KMtek"
+                width="205"
+                height="109"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <!-- Red Diagonal Corner Accent -->
+          <div class="maker-bottom-accent-triangle" aria-hidden="true"></div>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       INTERACTIVE MODAL OVERLAY (REGISTRATION & CONSULTATION FORM)
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Tutup jendela modal">&times;</button>
+      <h3 class="modal-title" id="modal-title">Judul Modal</h3>
+      <p class="modal-subtitle" id="modal-subtitle">Subjudul modal informasi.</p>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__newsletter-strip">
+      <div class="container footer__newsletter-inner">
+        <div class="footer__newsletter-text">
+          <strong>Tetap Terinformasi.</strong> Dapatkan jadwal live webinar berkala, link akses streaming eksklusif, dan rekaman materi gratis langsung di email Anda.
+        </div>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih! Anda telah terdaftar.');" aria-label="Langganan newsletter">
+          <input type="email" placeholder="Alamat email Anda" class="footer__newsletter-input" aria-label="Email untuk newsletter" required />
+          <button type="submit" class="btn btn--primary">Berlangganan</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__inner">
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="KMTek Beranda">
+            <span class="footer__logo-km">KM</span><span class="footer__logo-tek">Tek</span>
+          </a>
+          <p class="footer__tagline">
+            Menghubungkan perangkat,<br />memberdayakan industri &amp; edukasi.
+          </p>
+          <div class="footer__socials" role="list" aria-label="Tautan media sosial">
+            <a href="#" role="listitem" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="Twitter/X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.907l4.274 5.65zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Tautan Hardware">
+          <h3 class="footer__col-heading">Hardware</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="hardware-maker.html" class="footer__link">for Maker (Mappi32)</a></li>
+            <li><a href="hardware-education.html" class="footer__link">for Education (IoT Kit)</a></li>
+            <li><a href="hardware-industry.html" class="footer__link">for Industry (Basic Mertani)</a></li>
+            <li><a href="hardware.html" class="footer__link">Lihat Semua Hardware</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Services">
+          <h3 class="footer__col-heading">Services</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="services-training.html" class="footer__link">Training &amp; Magang Guru</a></li>
+            <li><a href="services-collab.html" class="footer__link">Collaborations Project</a></li>
+            <li><a href="services-collab.html" class="footer__link">Teaching Factory (TEFA)</a></li>
+            <li><a href="services-bnsp.html" class="footer__link">Sertifikasi BNSP IoT</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Bootcamp &amp; Hub">
+          <h3 class="footer__col-heading">Bootcamp &amp; Hub</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="bootcamp-webinar.html" class="footer__link">Webinar Live Streaming</a></li>
+            <li><a href="bootcamp-ecourse.html" class="footer__link">E-Course (4 Pilar Belajar)</a></li>
+            <li><a href="kmpedia.html" class="footer__link">KMPedia Knowledge Hub</a></li>
+            <li><a href="kmpedia.html" class="footer__link">Skematik &amp; Wiring Diagram</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2026</span> PT Kreasi Mandiri Teknologi (KMtek). Seluruh hak cipta dilindungi undang-undang.
+        </p>
+        <div class="footer__meta-links">
+          <a href="#" class="footer__meta-link">Kebijakan Privasi</a>
+          <a href="#" class="footer__meta-link">Syarat &amp; Ketentuan</a>
+          <a href="#" class="footer__meta-link">Mitra Resmi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas halaman">&uarr;</button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <!-- Floating Contact Chat Pill -->
+  <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20ingin%20konsultasi%20seputar%20produk%20dan%20layanan%20IoT" target="_blank" rel="noopener" class="floating-chat-pill" aria-label="Hubungi kami melalui WhatsApp">
+    <span aria-hidden="true">&#128172;</span>
+    <span>Let's Chat</span>
+  </a>
+
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KMtek Services: Collaborations Project &amp; Teaching Factory (TEFA). Kolaborasi untuk inovasi yang berdampak: pengembangan produk R&amp;D, inovasi bersama kampus-industri, dan teaching factory berbasis IoT." />
+  <title>Collaborations Project &amp; TEFA - KMtek Services</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/views.css" />
+</head>
+<body class="page-maker-body">
+
+    <!-- ============================================================
+       NAVIGATION HEADER (STANDARDIZED MAKER NAVBAR)
+  ============================================================ -->
+  <header class="nav-header maker-nav-header" id="nav-header" role="banner">
+    <div class="container nav-header__inner">
+      <a href="index.html" class="maker-logo" aria-label="KMtek Beranda">
+        <span class="maker-logo-slashes">//</span>
+        <span>KMtek</span>
+        <span class="maker-logo-reg">&reg;</span>
+      </a>
+
+      <nav class="nav-header__nav" aria-label="Navigasi Utama">
+        <ul class="nav-header__list" role="list">
+          <li class="nav-header__item">
+            <a href="index.html" class="nav-header__link">Home</a>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="hardware.html" class="nav-header__link">
+              Hardware
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="hardware-maker.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔧</span>
+                <span>Maker</span>
+              </a>
+              <a href="hardware-education.html" class="maker-dropdown-item" role="menuitem">
+                <span>🎓</span>
+                <span>Education</span>
+              </a>
+              <a href="hardware-industry.html" class="maker-dropdown-item" role="menuitem">
+                <span>🏭</span>
+                <span>Industry</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="hardware.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Hardware &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="services.html" class="nav-header__link maker-nav-link-active" aria-expanded="true">
+              Services
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" style="stroke: #ffffff;">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="services-training.html" class="maker-dropdown-item" role="menuitem">
+                <span>👨‍🏫</span>
+                <span>Training &amp; Magang Guru</span>
+              </a>
+              <a href="services-collab.html" class="maker-dropdown-item is-selected" role="menuitem">
+                <span>🤝</span>
+                <span>Collaborations Project</span>
+              </a>
+              <a href="services-bnsp.html" class="maker-dropdown-item" role="menuitem">
+                <span>📜</span>
+                <span>Sertifikasi BNSP</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="services.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Services &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="bootcamp.html" class="nav-header__link">
+              Bootcamp
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="bootcamp-webinar.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔴</span>
+                <span>Webinar Live</span>
+              </a>
+              <a href="bootcamp-ecourse.html" class="maker-dropdown-item" role="menuitem">
+                <span>💻</span>
+                <span>E-Course (On Going)</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="bootcamp.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Bootcamp &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item">
+            <a href="kmpedia.html" class="nav-header__link">KMPedia</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-header__hamburger" aria-label="Buka navigasi menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE NAVIGATION OVERLAY
+  ============================================================ -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav__close" aria-label="Tutup menu">&times;</button>
+    <nav aria-label="Navigasi Mobile" style="width: 100%;">
+      <ul class="mobile-nav__list" role="list">
+        <li class="mobile-nav__item">
+          <a href="index.html" class="mobile-nav__link">Beranda</a>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="hardware.html" class="mobile-nav__link">Hardware</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu hardware">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="hardware-maker.html" class="mobile-nav__sub-link">🔧 for Maker (Mappi32 &amp; Modul)</a>
+            <a href="hardware-education.html" class="mobile-nav__sub-link">🎓 for Education (IoT Kit)</a>
+            <a href="hardware-industry.html" class="mobile-nav__sub-link">🏭 for Industry (Basic Mertani)</a>
+            <a href="hardware.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Lihat Semua Hardware &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="services.html" class="mobile-nav__link is-active">Services</a>
+            <button class="mobile-nav__toggle is-open" aria-label="Toggle submenu services">▼</button>
+          </div>
+          <div class="mobile-nav__sub is-open">
+            <a href="services-training.html" class="mobile-nav__sub-link">👨‍🏫 Training &amp; Magang Guru</a>
+            <a href="services-collab.html" class="mobile-nav__sub-link is-active" style="color:var(--color-primary); font-weight:700;">🤝 Collaborations Project &amp; TEFA</a>
+            <a href="services-bnsp.html" class="mobile-nav__sub-link">📜 Sertifikasi BNSP (Hardware &amp; Platform)</a>
+            <a href="services.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Services &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="bootcamp.html" class="mobile-nav__link">Bootcamp</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu bootcamp">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="bootcamp-webinar.html" class="mobile-nav__sub-link">Webinar Live</a>
+            <a href="bootcamp-ecourse.html" class="mobile-nav__sub-link">E-Course (Modul, Video, Test, Sertifikat)</a>
+            <a href="bootcamp.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Bootcamp &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="kmpedia.html" class="mobile-nav__link">KMPedia</a>
+        </li>
+      </ul>
+      <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20tertarik%20dengan%20program%20Collaborations%20Project" target="_blank" rel="noopener" class="btn btn--primary mobile-nav__cta" style="width: 100%; margin-top: 1.5rem; border-radius: 999px;">
+        Hubungi Kami 💬
+      </a>
+    </nav>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT: COLLABORATIONS PROJECT (EXACT MOCKUP)
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section class="maker-hero-section">
+      <div class="container maker-hero-container">
+        <!-- Left Column: Copy & Actions -->
+        <div>
+          <div class="maker-tagline">
+            <span class="maker-slashes-red">//</span>
+            <span>Services &mdash; Collaborations Project</span>
+          </div>
+
+          <h1 class="maker-main-heading" style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 0.35rem;">
+            Kolaborasi untuk inovasi yang berdampak
+          </h1>
+
+          <!-- Red Brush Accent Line Matching Mockup -->
+          <div style="width: 55px; height: 3.5px; background: #F52929; border-radius: 2px; margin: 0.85rem 0 1.25rem 0;"></div>
+
+          <p class="maker-hero-paragraph">
+            Program kolaborasi untuk pengembangan produk, inovasi bersama, dan teaching factory berbasis teknologi IoT yang relevan dengan kebutuhan industri dan dunia pendidikan.
+          </p>
+
+          <a href="#layanan-kolaborasi" class="maker-hero-cta-btn">
+            Diskusikan Kolaborasi &rarr;
+          </a>
+        </div>
+
+        <!-- Right Column: Engineers & Students Team Image -->
+        <div class="maker-hero-image-wrap">
+          <img
+            src="assets/images/collab-hero-team.png"
+            alt="Kolaborasi Riset dan Inovasi IoT KMtek"
+            class="maker-hero-image"
+            width="520"
+            height="350"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. LAYANAN KOLABORASI SECTION (3 CARDS MATCHING MOCKUP) -->
+    <section style="background: #ffffff; padding: 3rem 0 4rem 0; border-top: 1px solid #f1f2f5;" id="layanan-kolaborasi">
+      <div class="container">
+        <!-- Section Header -->
+        <div style="margin-bottom: 2.5rem;">
+          <h2 style="font-size: clamp(1.65rem, 3vw, 2.25rem); font-weight: 800; color: #111827; margin-bottom: 0.5rem; letter-spacing: -0.02em;">
+            Layanan Kolaborasi
+          </h2>
+          <p style="font-size: 0.95rem; color: #4b5563; max-width: 720px; line-height: 1.6;">
+            Berbagai bentuk kerja sama untuk menghadirkan solusi, inovasi, dan ekosistem pembelajaran IoT yang nyata dan berkelanjutan.
+          </p>
+        </div>
+
+        <!-- 3 Collab Cards Grid Matching Mockup -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+
+          <!-- Card 1: Pengembangan Produk -->
+          <article class="collab-service-card">
+            <div class="collab-service-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#F52929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="collab-service-title">Pengembangan Produk</h3>
+            <p class="collab-service-desc">
+              Kolaborasi R&amp;D untuk merancang, membuat prototipe, dan mengembangkan produk IoT sesuai kebutuhan industri, sekolah, atau kampus.
+            </p>
+            <div style="margin-top: auto; padding-top: 1.5rem;">
+              <button class="maker-card-btn-action js-open-service-modal" data-service-name="Kolaborasi R&D Pengembangan Produk IoT">
+                Konsultasi R&amp;D &rarr;
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: Inovasi Bersama -->
+          <article class="collab-service-card">
+            <div class="collab-service-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#F52929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="9" y1="18" x2="15" y2="18"></line>
+                <line x1="10" y1="22" x2="14" y2="22"></line>
+                <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+              </svg>
+            </div>
+            <h3 class="collab-service-title">Inovasi Bersama</h3>
+            <p class="collab-service-desc">
+              Mengembangkan solusi IoT baru melalui kolaborasi lintas institusi, mulai dari ideasi, prototipe, hingga implementasi di lingkungan nyata.
+            </p>
+            <div style="margin-top: auto; padding-top: 1.5rem;">
+              <button class="maker-card-btn-action js-open-service-modal" data-service-name="Program Inovasi Bersama (Matching Fund / Hibah)">
+                Ajukan Inovasi &rarr;
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: Teaching Factory -->
+          <article class="collab-service-card">
+            <div class="collab-service-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#F52929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4H2z"></path>
+                <path d="M17 18h1"></path>
+                <path d="M12 18h1"></path>
+                <path d="M7 18h1"></path>
+              </svg>
+            </div>
+            <h3 class="collab-service-title">Teaching Factory</h3>
+            <p class="collab-service-desc">
+              Membangun ekosistem pembelajaran berbasis proyek nyata, dengan standar industri, peralatan relevan, dan keterlibatan langsung siswa/mahasiswa.
+            </p>
+            <div style="margin-top: auto; padding-top: 1.5rem;">
+              <button class="maker-card-btn-action js-open-service-modal" data-service-name="Pembangunan Teaching Factory (TEFA IoT)">
+                Bangun TEFA &rarr;
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROSES KOLABORASI YANG JELAS SECTION (4 STEPS MATCHING MOCKUP) -->
+    <section style="background: #ffffff; padding: 3.5rem 0 4.5rem 0; border-top: 1px solid #f1f2f5;">
+      <div class="container">
+        <!-- Header -->
+        <div>
+          <h2 style="font-size: clamp(1.6rem, 3.2vw, 2.25rem); font-weight: 800; color: #111827; margin-bottom: 0.5rem; letter-spacing: -0.02em;">
+            Proses Kolaborasi yang Jelas
+          </h2>
+          <p style="font-size: 0.95rem; color: #4b5563; line-height: 1.6;">
+            Alur kerja kolaborasi yang mudah, terstruktur, dan berorientasi pada hasil nyata.
+          </p>
+        </div>
+
+        <!-- 4 Steps Horizontal Flow with Red Icons & Arrows -->
+        <div class="collab-steps-grid">
+
+          <!-- Step 1: Diskusi Kebutuhan -->
+          <div class="collab-step-item">
+            <div class="collab-step-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#F52929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                <circle cx="9" cy="10" r="1" fill="#F52929"></circle>
+                <circle cx="12" cy="10" r="1" fill="#F52929"></circle>
+                <circle cx="15" cy="10" r="1" fill="#F52929"></circle>
+              </svg>
+            </div>
+            <h3 class="collab-step-title">1. Diskusi Kebutuhan</h3>
+            <p class="collab-step-desc">
+              Mengidentifikasi tujuan, ruang lingkup, dan peluang kolaborasi.
+            </p>
+          </div>
+
+          <!-- Arrow 1 -> 2 -->
+          <div class="collab-step-arrow" aria-hidden="true">&rarr;</div>
+
+          <!-- Step 2: Perancangan Solusi -->
+          <div class="collab-step-item">
+            <div class="collab-step-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#F52929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="collab-step-title">2. Perancangan Solusi</h3>
+            <p class="collab-step-desc">
+              Menyusun konsep, timeline, dan rencana implementasi bersama.
+            </p>
+          </div>
+
+          <!-- Arrow 2 -> 3 -->
+          <div class="collab-step-arrow" aria-hidden="true">&rarr;</div>
+
+          <!-- Step 3: Pengembangan & Implementasi -->
+          <div class="collab-step-item">
+            <div class="collab-step-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#F52929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="collab-step-title">3. Pengembangan &amp; Implementasi</h3>
+            <p class="collab-step-desc">
+              Melakukan pengembangan, integrasi, dan uji coba solusi/pembelajaran.
+            </p>
+          </div>
+
+          <!-- Arrow 3 -> 4 -->
+          <div class="collab-step-arrow" aria-hidden="true">&rarr;</div>
+
+          <!-- Step 4: Evaluasi & Skalasi -->
+          <div class="collab-step-item">
+            <div class="collab-step-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#F52929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+              </svg>
+            </div>
+            <h3 class="collab-step-title">4. Evaluasi &amp; Skalasi</h3>
+            <p class="collab-step-desc">
+              Menilai hasil, perbaikan, dan peluang pengembangan lebih lanjut.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- 4. BOTTOM BANNER (FAMILY DESIGN WITH RED ACCENT TRIANGLE) -->
+        <section class="maker-bottom-cta-section" style="margin-top: 4.5rem;" aria-label="Mulai Kemitraan Bersama KMtek">
+          <div class="maker-bottom-grid">
+            <div>
+              <h3 class="maker-bottom-heading">
+                <span class="maker-slashes-red">//</span>
+                <span>Mulai Kemitraan Strategis Bersama KMtek</span>
+              </h3>
+              <p class="maker-bottom-text">
+                Wujudkan inovasi teknologi IoT terapan dan teaching factory modern bersama tim engineer dan konsultan KMtek.
+              </p>
+              <div style="margin-top: 1.5rem;">
+                <button class="maker-hero-cta-btn js-open-service-modal" data-service-name="Konsultasi Kemitraan Strategis IoT">
+                  Diskusikan Proyek Kolaborasi &rarr;
+                </button>
+              </div>
+            </div>
+            <div class="maker-bottom-image-box">
+              <img
+                src="assets/images/maker-bottom-laptop.png"
+                alt="Konsultasi Kemitraan KMtek"
+                width="205"
+                height="109"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <!-- Red Diagonal Corner Accent -->
+          <div class="maker-bottom-accent-triangle" aria-hidden="true"></div>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       INTERACTIVE MODAL OVERLAY (CONSULTATION FORM)
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Tutup jendela modal">&times;</button>
+      <h3 class="modal-title" id="modal-title">Judul Modal</h3>
+      <p class="modal-subtitle" id="modal-subtitle">Subjudul modal informasi.</p>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__newsletter-strip">
+      <div class="container footer__newsletter-inner">
+        <div class="footer__newsletter-text">
+          <strong>Tetap Terinformasi.</strong> Dapatkan studi kasus kolaborasi R&amp;D industri, panduan Teaching Factory (TEFA), serta peluang program hibah inovasi bersama.
+        </div>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih! Anda telah terdaftar.');" aria-label="Langganan newsletter">
+          <input type="email" placeholder="Alamat email Anda" class="footer__newsletter-input" aria-label="Email untuk newsletter" required />
+          <button type="submit" class="btn btn--primary">Berlangganan</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__inner">
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="KMTek Beranda">
+            <span class="footer__logo-km">KM</span><span class="footer__logo-tek">Tek</span>
+          </a>
+          <p class="footer__tagline">
+            Menghubungkan perangkat,<br />memberdayakan industri &amp; edukasi.
+          </p>
+          <div class="footer__socials" role="list" aria-label="Tautan media sosial">
+            <a href="#" role="listitem" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="Twitter/X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.907l4.274 5.65zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Tautan Hardware">
+          <h3 class="footer__col-heading">Hardware</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="hardware-maker.html" class="footer__link">for Maker (Mappi32)</a></li>
+            <li><a href="hardware-education.html" class="footer__link">for Education (IoT Kit)</a></li>
+            <li><a href="hardware-industry.html" class="footer__link">for Industry (Basic Mertani)</a></li>
+            <li><a href="hardware.html" class="footer__link">Lihat Semua Hardware</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Services">
+          <h3 class="footer__col-heading">Services</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="services-training.html" class="footer__link">Training &amp; Magang Guru</a></li>
+            <li><a href="services-collab.html" class="footer__link">Collaborations Project</a></li>
+            <li><a href="services-collab.html" class="footer__link">Teaching Factory (TEFA)</a></li>
+            <li><a href="services-bnsp.html" class="footer__link">Sertifikasi BNSP IoT</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Bootcamp &amp; Hub">
+          <h3 class="footer__col-heading">Bootcamp &amp; Hub</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="bootcamp-webinar.html" class="footer__link">Webinar Live Streaming</a></li>
+            <li><a href="bootcamp-ecourse.html" class="footer__link">E-Course (4 Pilar Belajar)</a></li>
+            <li><a href="kmpedia.html" class="footer__link">KMPedia Knowledge Hub</a></li>
+            <li><a href="kmpedia.html" class="footer__link">Skematik &amp; Wiring Diagram</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2026</span> PT Kreasi Mandiri Teknologi (KMtek). Seluruh hak cipta dilindungi undang-undang.
+        </p>
+        <div class="footer__meta-links">
+          <a href="#" class="footer__meta-link">Kebijakan Privasi</a>
+          <a href="#" class="footer__meta-link">Syarat &amp; Ketentuan</a>
+          <a href="#" class="footer__meta-link">Mitra Resmi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas halaman">&uarr;</button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <!-- Floating Contact Chat Pill -->
+  <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20ingin%20konsultasi%20seputar%20produk%20dan%20layanan%20IoT" target="_blank" rel="noopener" class="floating-chat-pill" aria-label="Hubungi kami melalui WhatsApp">
+    <span aria-hidden="true">&#128172;</span>
+    <span>Let's Chat</span>
+  </a>
+
+</body>
+</html>

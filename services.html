@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KMtek Services: Solusi kemitraan &amp; rekayasa IoT terpadu. Program Magang Guru SMK, Pelatihan On-Demand, Kolaborasi Riset Produk IoT, Teaching Factory (TEFA), dan Sertifikasi Profesi BNSP." />
+  <title>Services - Layanan &amp; Kemitraan IoT KMtek</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/views.css" />
+</head>
+<body class="page-maker-body">
+
+    <!-- ============================================================
+       NAVIGATION HEADER (STANDARDIZED MAKER NAVBAR)
+  ============================================================ -->
+  <header class="nav-header maker-nav-header" id="nav-header" role="banner">
+    <div class="container nav-header__inner">
+      <a href="index.html" class="maker-logo" aria-label="KMtek Beranda">
+        <span class="maker-logo-slashes">//</span>
+        <span>KMtek</span>
+        <span class="maker-logo-reg">&reg;</span>
+      </a>
+
+      <nav class="nav-header__nav" aria-label="Navigasi Utama">
+        <ul class="nav-header__list" role="list">
+          <li class="nav-header__item">
+            <a href="index.html" class="nav-header__link">Home</a>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="hardware.html" class="nav-header__link">
+              Hardware
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="hardware-maker.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔧</span>
+                <span>Maker</span>
+              </a>
+              <a href="hardware-education.html" class="maker-dropdown-item" role="menuitem">
+                <span>🎓</span>
+                <span>Education</span>
+              </a>
+              <a href="hardware-industry.html" class="maker-dropdown-item" role="menuitem">
+                <span>🏭</span>
+                <span>Industry</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="hardware.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Hardware &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="services.html" class="nav-header__link maker-nav-link-active" aria-expanded="true">
+              Services
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" style="stroke: #ffffff;">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="services-training.html" class="maker-dropdown-item" role="menuitem">
+                <span>👨‍🏫</span>
+                <span>Training &amp; Magang Guru</span>
+              </a>
+              <a href="services-collab.html" class="maker-dropdown-item" role="menuitem">
+                <span>🤝</span>
+                <span>Collaborations Project</span>
+              </a>
+              <a href="services-bnsp.html" class="maker-dropdown-item" role="menuitem">
+                <span>📜</span>
+                <span>Sertifikasi BNSP</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="services.html" class="maker-dropdown-item is-selected" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Services &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="bootcamp.html" class="nav-header__link">
+              Bootcamp
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="bootcamp-webinar.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔴</span>
+                <span>Webinar Live</span>
+              </a>
+              <a href="bootcamp-ecourse.html" class="maker-dropdown-item" role="menuitem">
+                <span>💻</span>
+                <span>E-Course (On Going)</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="bootcamp.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Bootcamp &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item">
+            <a href="kmpedia.html" class="nav-header__link">KMPedia</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-header__hamburger" aria-label="Buka navigasi menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE NAVIGATION OVERLAY
+  ============================================================ -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav__close" aria-label="Tutup menu">&times;</button>
+    <nav aria-label="Navigasi Mobile" style="width: 100%;">
+      <ul class="mobile-nav__list" role="list">
+        <li class="mobile-nav__item">
+          <a href="index.html" class="mobile-nav__link">Beranda</a>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="hardware.html" class="mobile-nav__link">Hardware</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu hardware">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="hardware-maker.html" class="mobile-nav__sub-link">🔧 for Maker (Mappi32 &amp; Modul)</a>
+            <a href="hardware-education.html" class="mobile-nav__sub-link">🎓 for Education (IoT Kit)</a>
+            <a href="hardware-industry.html" class="mobile-nav__sub-link">🏭 for Industry (Basic Mertani)</a>
+            <a href="hardware.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Lihat Semua Hardware &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="services.html" class="mobile-nav__link is-active">Services</a>
+            <button class="mobile-nav__toggle is-open" aria-label="Toggle submenu services">▼</button>
+          </div>
+          <div class="mobile-nav__sub is-open">
+            <a href="services-training.html" class="mobile-nav__sub-link">👨‍🏫 Training &amp; Magang Guru</a>
+            <a href="services-collab.html" class="mobile-nav__sub-link">🤝 Collaborations Project &amp; TEFA</a>
+            <a href="services-bnsp.html" class="mobile-nav__sub-link">📜 Sertifikasi BNSP (Hardware &amp; Platform)</a>
+            <a href="services.html" class="mobile-nav__sub-link is-active" style="color:var(--color-primary); font-weight:700;">Buka Halaman Services &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="bootcamp.html" class="mobile-nav__link">Bootcamp</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu bootcamp">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="bootcamp-webinar.html" class="mobile-nav__sub-link">Webinar Live</a>
+            <a href="bootcamp-ecourse.html" class="mobile-nav__sub-link">E-Course (Modul, Video, Test, Sertifikat)</a>
+            <a href="bootcamp.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Bootcamp &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="kmpedia.html" class="mobile-nav__link">KMPedia</a>
+        </li>
+      </ul>
+      <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20tertarik%20dengan%20layanan%20KMtek%20Services" target="_blank" rel="noopener" class="btn btn--primary mobile-nav__cta" style="width: 100%; margin-top: 1.5rem; border-radius: 999px;">
+        Hubungi Kami 💬
+      </a>
+    </nav>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT: SERVICES HUB (SERAGAM DENGAN 3 BAGIAN)
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section class="maker-hero-section">
+      <div class="container maker-hero-container">
+        <!-- Left Column: Copy & Actions -->
+        <div>
+          <div class="maker-tagline">
+            <span class="maker-slashes-red">//</span>
+            <span>SERVICES &amp; KEMITRAAN</span>
+          </div>
+
+          <h1 class="maker-main-heading">
+            <span class="maker-word-red">Services</span>
+            Solusi kemitraan &amp; rekayasa IoT berdampak.
+          </h1>
+
+          <!-- Red Brush Accent Line -->
+          <div style="width: 55px; height: 3.5px; background: #F52929; border-radius: 2px; margin: 0.85rem 0 1.25rem 0;"></div>
+
+          <p class="maker-hero-paragraph">
+            Pendampingan teknis dan kemitraan strategis menyeluruh: program pelatihan &amp; magang guru SMK, kolaborasi riset pengembangan produk IoT &amp; Teaching Factory, serta uji kompetensi resmi berstandar BNSP.
+          </p>
+
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="services-training.html" class="maker-hero-cta-btn">
+              👨‍🏫 Training &amp; Magang Guru &rarr;
+            </a>
+            <a href="services-collab.html" class="maker-card-btn-action" style="width: auto; padding: 0.85rem 1.4rem;">
+              🤝 Collaborations Project
+            </a>
+            <a href="services-bnsp.html" class="maker-card-btn-action" style="width: auto; padding: 0.85rem 1.4rem;">
+              📜 Sertifikasi BNSP
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Showcase -->
+        <div class="maker-hero-image-wrap">
+          <img
+            src="assets/images/collab-hero-team.png"
+            alt="KMtek Services Tim Kolaborasi IoT"
+            class="maker-hero-image"
+            width="520"
+            height="350"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. THREE SUB-SECTIONS GATEWAY CARDS (SERAGAM DENGAN 3 BAGIAN) -->
+    <section style="background: #fafafc; padding: 3rem 0; border-top: 1px solid #f1f2f5; border-bottom: 1px solid #f1f2f5;">
+      <div class="container">
+        <div style="margin-bottom: 1.5rem;">
+          <span style="font-size: 0.85rem; font-weight: 800; color: #F52929; text-transform: uppercase; letter-spacing: 0.05em;">// 3 LINI LAYANAN UTAMA</span>
+          <h2 style="font-size: 1.75rem; font-weight: 800; color: #111827; margin-top: 0.25rem;">Pilih Kategori Layanan Sesuai Kebutuhan Anda</h2>
+        </div>
+
+        <div class="services-hub-categories">
+
+          <!-- Gateway Card 1: Training & Magang Guru -->
+          <a href="services-training.html" class="services-hub-card">
+            <div class="services-hub-card__top">
+              <div class="services-hub-card__icon">👨‍🏫</div>
+              <span class="services-hub-card__badge">Edukasi &amp; Vokasi</span>
+            </div>
+            <h3 class="services-hub-card__title">Training &amp; Magang Guru</h3>
+            <p class="services-hub-card__desc">
+              Program pelatihan aplikatif dan magang industri terpadu bagi guru SMK &amp; dosen vokasi untuk meningkatkan kompetensi pengajaran teknologi IoT mutakhir.
+            </p>
+            <span class="services-hub-card__link">Buka Halaman Training &amp; Magang Guru &rarr;</span>
+          </a>
+
+          <!-- Gateway Card 2: Collaborations Project -->
+          <a href="services-collab.html" class="services-hub-card">
+            <div class="services-hub-card__top">
+              <div class="services-hub-card__icon">🤝</div>
+              <span class="services-hub-card__badge">R&amp;D &amp; Teaching Factory</span>
+            </div>
+            <h3 class="services-hub-card__title">Collaborations Project</h3>
+            <p class="services-hub-card__desc">
+              Kerja sama riset &amp; pengembangan produk hardware IoT, program Matching Fund Kedaireka, serta pembentukan ekosistem Teaching Factory (TEFA) berstandar industri.
+            </p>
+            <span class="services-hub-card__link">Buka Halaman Collaborations Project &rarr;</span>
+          </a>
+
+          <!-- Gateway Card 3: Sertifikasi BNSP -->
+          <a href="services-bnsp.html" class="services-hub-card">
+            <div class="services-hub-card__top">
+              <div class="services-hub-card__icon">📜</div>
+              <span class="services-hub-card__badge">Kredensial Resmi Negara</span>
+            </div>
+            <h3 class="services-hub-card__title">Sertifikasi BNSP IoT</h3>
+            <p class="services-hub-card__desc">
+              Uji kompetensi resmi Badan Nasional Sertifikasi Profesi (BNSP) berstandar SKKNI: Skema Hardware IoT dan Skema Platform IoT berlogo Garuda Emas diakui negara ASEAN.
+            </p>
+            <span class="services-hub-card__link">Buka Halaman Sertifikasi BNSP &rarr;</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. INTERACTIVE FILTER TABS & SEARCH CONTROLS -->
+    <div class="view-controls" id="katalog-services">
+      <div class="container view-controls__inner">
+        <div class="view-tabs" role="tablist" aria-label="Kategori Services">
+          <button class="view-tab is-active" data-tab="all" role="tab">Semua Layanan <span class="view-tab__count">8</span></button>
+          <button class="view-tab" data-tab="training" role="tab">👨‍🏫 Training &amp; Magang Guru <span class="view-tab__count">3</span></button>
+          <button class="view-tab" data-tab="collab" role="tab">🤝 Collaborations Project <span class="view-tab__count">3</span></button>
+          <button class="view-tab" data-tab="bnsp" role="tab">📜 Sertifikasi BNSP <span class="view-tab__count">2</span></button>
+        </div>
+
+        <div class="view-search">
+          <span class="view-search__icon" aria-hidden="true">🔍</span>
+          <input type="text" class="view-search__input" placeholder="Cari layanan (magang guru, TEFA, BNSP, R&amp;D)..." aria-label="Cari layanan" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. SERVICES CATALOG BODY -->
+    <div class="view-body">
+      <div class="container">
+
+        <!-- A. TRAINING SECTION -->
+        <section class="shop-category-section" data-section-category="training" id="sec-services-training">
+          <div class="shop-category-header">
+            <div>
+              <h2 class="shop-category-header__title">
+                👨‍🏫 Training &amp; Pelatihan IoT
+                <span class="shop-category-header__badge">On Demand &amp; Magang Guru</span>
+              </h2>
+              <p class="shop-category-header__desc">Peningkatan keahlian praktis rekayasa IoT untuk tenaga pendidik vokasi, mahasiswa, dan staf engineering perusahaan.</p>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <!-- Magang Guru SMK -->
+            <article class="service-card" data-category="training">
+              <div class="service-card__top-bar"></div>
+              <div class="service-card__icon-wrap">👨‍🏫</div>
+              <span class="service-card__tag">Program Unggulan Vokasi</span>
+              <h3 class="service-card__title">1. Magang Guru SMK</h3>
+              <p class="service-card__desc">
+                Program magang industri komprehensif bagi guru SMK untuk menyelaraskan kompetensi ajar dengan kebutuhan Dunia Usaha dan Dunia Industri (DUDI). Terlibat langsung dalam riset perakitan perangkat keras, pengujian sensor, dan kurikulum merdeka IoT.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Praktik langsung di lab riset &amp; lini manufaktur KMtek</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Bimbingan penyusunan RPP &amp; modul ajar IoT siap pakai</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Sertifikat magang industri resmi 40 &ndash; 120 JP</span>
+                </li>
+              </ul>
+              <div class="service-card__action">
+                <button class="btn btn--primary js-open-service-modal" data-service-name="Magang Guru SMK" style="width: 100%;">
+                  Konsultasi Magang Guru
+                </button>
+              </div>
+            </article>
+
+            <!-- Magang Dosen Vokasi -->
+            <article class="service-card" data-category="training">
+              <div class="service-card__top-bar"></div>
+              <div class="service-card__icon-wrap">🎓</div>
+              <span class="service-card__tag">Akademik &amp; Hilirisasi Riset</span>
+              <h3 class="service-card__title">2. Magang Dosen Vokasi</h3>
+              <p class="service-card__desc">
+                Program magang riset terapan bagi dosen perguruan tinggi vokasi untuk memperdalam teknologi edge computing, integrasi cloud IoT, dan hilirisasi paten riset terapan kampus ke industri.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Pendampingan riset terapan bersama engineer industri senior</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Akses platform hardware Mappi32 &amp; modul telemetri KMtek</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Peluang publikasi ilmiah &amp; luaran paten bersama industri</span>
+                </li>
+              </ul>
+              <div class="service-card__action">
+                <button class="btn btn--primary js-open-service-modal" data-service-name="Magang Dosen Vokasi" style="width: 100%;">
+                  Konsultasi Magang Dosen
+                </button>
+              </div>
+            </article>
+
+            <!-- Training on Demand -->
+            <article class="service-card" data-category="training">
+              <div class="service-card__top-bar"></div>
+              <div class="service-card__icon-wrap">💻</div>
+              <span class="service-card__tag">Kustom Sesuai Kebutuhan</span>
+              <h3 class="service-card__title">3. Training On Demand</h3>
+              <p class="service-card__desc">
+                Pelatihan intensif IoT dengan kurikulum yang dirancang khusus menyesuaikan kebutuhan institusi sekolah, kampus, atau industri. Tersedia opsi pelatihan offline di lab KMtek atau in-house di lokasi klien.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Silabus fleksibel: sensor, mikrokontroler, LoRa/LTE, &amp; cloud</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Praktik langsung 80% dengan IoT kit &amp; hardware kit industri</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Dukungan trainer bersertifikat kompetensi nasional</span>
+                </li>
+              </ul>
+              <div class="service-card__action">
+                <button class="btn btn--primary js-open-service-modal" data-service-name="Training On Demand IoT" style="width: 100%;">
+                  Ajukan Training On Demand
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- B. COLLABORATIONS SECTION -->
+        <section class="shop-category-section" data-section-category="collab" id="sec-services-collab" style="margin-top: 3.5rem;">
+          <div class="shop-category-header">
+            <div>
+              <h2 class="shop-category-header__title">
+                🤝 Collaborations Project &amp; TEFA
+                <span class="shop-category-header__badge">R&amp;D &amp; Inovasi</span>
+              </h2>
+              <p class="shop-category-header__desc">Kemitraan strategis R&amp;D pengembangan produk teknologi, hibah riset Matching Fund, dan implementasi Teaching Factory modern.</p>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <!-- Pengembangan Produk IoT -->
+            <article class="service-card" data-category="collab">
+              <div class="service-card__top-bar"></div>
+              <div class="service-card__icon-wrap">⚙️</div>
+              <span class="service-card__tag">Inovasi Rekayasa Perangkat</span>
+              <h3 class="service-card__title">1. Pengembangan Produk</h3>
+              <p class="service-card__desc">
+                Kolaborasi riset dan rekayasa untuk merancang, membuat prototipe sirkuit elektronik, merancang firmware tersemat, hingga memproduksi massal perangkat IoT kustom sesuai spesifikasi kebutuhan Anda.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Desain skematik &amp; layout PCB industri multi-layer</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Prototyping cepat, fabrikasi casing 3D, dan pengujian termal</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Transfer teknologi dan pendampingan sertifikasi perangkat</span>
+                </li>
+              </ul>
+              <div class="service-card__action">
+                <button class="btn btn--primary js-open-service-modal" data-service-name="Pengembangan Produk IoT R&D" style="width: 100%;">
+                  Konsultasi R&amp;D Produk
+                </button>
+              </div>
+            </article>
+
+            <!-- Inovasi Bersama (Matching Fund) -->
+            <article class="service-card" data-category="collab">
+              <div class="service-card__top-bar"></div>
+              <div class="service-card__icon-wrap">💡</div>
+              <span class="service-card__tag">Kemitraan Hibah &amp; Riset</span>
+              <h3 class="service-card__title">2. Inovasi Bersama</h3>
+              <p class="service-card__desc">
+                Kemitraan antara perguruan tinggi/SMK vokasi dengan KMtek dalam program Matching Fund (Kedaireka), hibah vokasi, atau pendanaan riset inovasi bersama untuk menghasilkan solusi nyata di masyarakat.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Penyusunan proposal &amp; roadmap implementasi bersama industri</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Penyediaan fasilitas lab riset &amp; komponen komponen uji</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Implementasi prototipe langsung di lingkungan operasional nyata</span>
+                </li>
+              </ul>
+              <div class="service-card__action">
+                <button class="btn btn--primary js-open-service-modal" data-service-name="Program Inovasi Bersama (Matching Fund)" style="width: 100%;">
+                  Ajukan Inovasi Bersama
+                </button>
+              </div>
+            </article>
+
+            <!-- Teaching Factory (TEFA) -->
+            <article class="service-card" data-category="collab">
+              <div class="service-card__top-bar"></div>
+              <div class="service-card__icon-wrap">🏭</div>
+              <span class="service-card__tag">Model Pembelajaran Industri</span>
+              <h3 class="service-card__title">3. Teaching Factory (TEFA)</h3>
+              <p class="service-card__desc">
+                Membangun lini perakitan (assembly line), quality control (QC), dan pengujian produk IoT riil di dalam lingkungan sekolah vokasi atau kampus, melatih siswa dalam atmosfer kerja pabrik sesungguhnya.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Penyediaan SOP manufaktur standar industri internasional</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Perakitan perangkat resmi KMtek oleh siswa/mahasiswa</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span>Model revenue sharing untuk dana kas mandiri institusi</span>
+                </li>
+              </ul>
+              <div class="service-card__action">
+                <button class="btn btn--primary js-open-service-modal" data-service-name="Teaching Factory (TEFA) IoT" style="width: 100%;">
+                  Bangun Teaching Factory
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- C. SERTIFIKASI BNSP -->
+        <section class="shop-category-section" data-section-category="bnsp" id="sec-services-bnsp" style="margin-top: 3.5rem;">
+          <div class="shop-category-header">
+            <div>
+              <h2 class="shop-category-header__title">
+                📜 Sertifikasi Profesi BNSP IoT
+                <span class="shop-category-header__badge">Standar Kompetensi Nasional</span>
+              </h2>
+              <p class="shop-category-header__desc">Sertifikasi kompetensi resmi Badan Nasional Sertifikasi Profesi (BNSP) berlogo Garuda Emas yang diakui secara nasional dan kawasan kerja regional ASEAN.</p>
+            </div>
+          </div>
+
+          <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));">
+            <!-- Skema Hardware IoT -->
+            <article class="service-card" data-category="bnsp">
+              <div class="service-card__top-bar" style="background:#F52929;"></div>
+              <div class="bnsp-badge">
+                <span>🦅</span> Sertifikasi Profesi Resmi BNSP
+              </div>
+              <h3 class="service-card__title">1. Skema Hardware IoT</h3>
+              <p class="service-card__desc">
+                Sertifikasi kompetensi perancangan, perakitan perangkat keras mikrokontroler, integrasi dan kalibrasi sensor, troubleshooting sirkuit, pengujian keselamatan kerja, dan integritas sinyal telemetri.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span><strong>Unit 1:</strong> Menganalisis kebutuhan perangkat keras IoT</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span><strong>Unit 2:</strong> Melakukan perakitan rangkaian mikrokontroler &amp; sensor</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span><strong>Unit 3:</strong> Menguji keandalan perangkat dan konsumsi daya sirkuit</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span><strong>Unit 4:</strong> Melakukan troubleshooting dan perbaikan modul hardware</span>
+                </li>
+              </ul>
+              <div class="service-card__action">
+                <button class="btn btn--primary js-open-service-modal" data-service-name="Sertifikasi BNSP Skema Hardware IoT" style="width: 100%;">
+                  Daftar Skema Hardware BNSP
+                </button>
+              </div>
+            </article>
+
+            <!-- Skema Platform IoT -->
+            <article class="service-card" data-category="bnsp">
+              <div class="service-card__top-bar" style="background:#F52929;"></div>
+              <div class="bnsp-badge">
+                <span>🦅</span> Sertifikasi Profesi Resmi BNSP
+              </div>
+              <h3 class="service-card__title">2. Skema Platform IoT</h3>
+              <p class="service-card__desc">
+                Sertifikasi kompetensi arsitektur data cloud IoT, konfigurasi MQTT broker &amp; RESTful API, integrasi edge gateway, keamanan data enkripsi TLS/SSL, manajemen database telemetri, dan visualisasi dashboard analitik.
+              </p>
+              <ul class="service-card__features">
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span><strong>Unit 1:</strong> Merancang arsitektur konektivitas &amp; alur data IoT</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span><strong>Unit 2:</strong> Mengonfigurasi protokol komunikasi MQTT, HTTP, &amp; WebSockets</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span><strong>Unit 3:</strong> Mengimplementasikan enkripsi &amp; keamanan data telemetri</span>
+                </li>
+                <li class="service-card__feature-item">
+                  <span class="service-card__feature-icon">✓</span>
+                  <span><strong>Unit 4:</strong> Membangun dashboard pemantauan &amp; notifikasi otomatis</span>
+                </li>
+              </ul>
+              <div class="service-card__action">
+                <button class="btn btn--primary js-open-service-modal" data-service-name="Sertifikasi BNSP Skema Platform IoT" style="width: 100%;">
+                  Daftar Skema Platform BNSP
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- 5. BOTTOM BANNER (FAMILY DESIGN WITH RED ACCENT TRIANGLE) -->
+    <div class="container" style="margin-top: 3.5rem; margin-bottom: 3.5rem;">
+      <section class="maker-bottom-cta-section" aria-label="Wujudkan Kemitraan Bersama KMtek">
+        <div class="maker-bottom-grid">
+          <div>
+            <h3 class="maker-bottom-heading">
+              <span class="maker-slashes-red">//</span>
+              <span>Wujudkan Kemitraan &amp; Program IoT Bersama KMtek</span>
+            </h3>
+            <p class="maker-bottom-text">
+              Konsultasikan kebutuhan pelatihan vokasi, program magang guru, proyek inovasi produk, maupun sertifikasi kompetensi BNSP institusi Anda bersama kami.
+            </p>
+            <div style="margin-top: 1.5rem;">
+              <button class="maker-hero-cta-btn js-open-service-modal" data-service-name="Konsultasi Kemitraan Menyeluruh KMtek Services">
+                Diskusikan Program Bersama Kami &rarr;
+              </button>
+            </div>
+          </div>
+          <div class="maker-bottom-image-box">
+            <img
+              src="assets/images/maker-bottom-laptop.png"
+              alt="Konsultasi Program Kemitraan KMtek Services"
+              width="205"
+              height="109"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <!-- Red Diagonal Corner Accent -->
+        <div class="maker-bottom-accent-triangle" aria-hidden="true"></div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ============================================================
+       INTERACTIVE MODAL OVERLAY (CONSULTATION FORM)
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Tutup jendela modal">&times;</button>
+      <h3 class="modal-title" id="modal-title">Judul Modal</h3>
+      <p class="modal-subtitle" id="modal-subtitle">Subjudul modal informasi.</p>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER (UNIFIED WITH BRANDING & ALL SUB-PAGES)
+  ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__newsletter-strip">
+      <div class="container footer__newsletter-inner">
+        <div class="footer__newsletter-text">
+          <strong>Tetap Terinformasi.</strong> Dapatkan wawasan tren IoT, studi kasus kemitraan Teaching Factory, dan jadwal sertifikasi BNSP langsung di email Anda.
+        </div>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih! Anda telah terdaftar.');" aria-label="Langganan newsletter">
+          <input type="email" placeholder="Alamat email Anda" class="footer__newsletter-input" aria-label="Email untuk newsletter" required />
+          <button type="submit" class="btn btn--primary">Berlangganan</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__inner">
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="KMTek Beranda">
+            <span class="footer__logo-km">KM</span><span class="footer__logo-tek">Tek</span>
+          </a>
+          <p class="footer__tagline">
+            Menghubungkan perangkat,<br />memberdayakan industri &amp; edukasi.
+          </p>
+          <div class="footer__socials" role="list" aria-label="Tautan media sosial">
+            <a href="#" role="listitem" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="Twitter/X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.907l4.274 5.65zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Tautan Hardware">
+          <h3 class="footer__col-heading">Hardware</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="hardware-maker.html" class="footer__link">for Maker (Mappi32)</a></li>
+            <li><a href="hardware-education.html" class="footer__link">for Education (IoT Kit)</a></li>
+            <li><a href="hardware-industry.html" class="footer__link">for Industry (Basic Mertani)</a></li>
+            <li><a href="hardware.html" class="footer__link">Lihat Semua Hardware</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Services">
+          <h3 class="footer__col-heading">Services</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="services-training.html" class="footer__link">Training &amp; Magang Guru</a></li>
+            <li><a href="services-collab.html" class="footer__link">Collaborations Project</a></li>
+            <li><a href="services-collab.html" class="footer__link">Teaching Factory (TEFA)</a></li>
+            <li><a href="services-bnsp.html" class="footer__link">Sertifikasi BNSP IoT</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Bootcamp &amp; Hub">
+          <h3 class="footer__col-heading">Bootcamp &amp; Hub</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="bootcamp-webinar.html" class="footer__link">Webinar Live Streaming</a></li>
+            <li><a href="bootcamp-ecourse.html" class="footer__link">E-Course (4 Pilar Belajar)</a></li>
+            <li><a href="kmpedia.html" class="footer__link">KMPedia Knowledge Hub</a></li>
+            <li><a href="kmpedia.html" class="footer__link">Skematik &amp; Wiring Diagram</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2026</span> PT Kreasi Mandiri Teknologi (KMtek). Seluruh hak cipta dilindungi undang-undang.
+        </p>
+        <div class="footer__meta-links">
+          <a href="#" class="footer__meta-link">Kebijakan Privasi</a>
+          <a href="#" class="footer__meta-link">Syarat &amp; Ketentuan</a>
+          <a href="#" class="footer__meta-link">Mitra Resmi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas halaman">&uarr;</button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <!-- Floating Contact Chat Pill -->
+  <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20ingin%20konsultasi%20seputar%20produk%20dan%20layanan%20IoT" target="_blank" rel="noopener" class="floating-chat-pill" aria-label="Hubungi kami melalui WhatsApp">
+    <span aria-hidden="true">&#128172;</span>
+    <span>Let's Chat</span>
+  </a>
+
+</body>
+</html>

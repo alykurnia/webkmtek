@@ -1,0 +1,284 @@
+/* =============================================================
+   KMTek – Main Stylesheet
+   Design tokens, resets, layout utilities, and base styles
+   ============================================================= */
+
+/* ---------------------------------------------------------------
+   1. DESIGN TOKENS (CSS Custom Properties)
+--------------------------------------------------------------- */
+:root {
+  /* --- Color Palette --- */
+  --color-primary:        #F52929;   /* Primary CTA / Red */
+  --color-accent-red:     #EE2B48;   /* Accent Red */
+  --color-link:           #0000EE;   /* Link Blue */
+  --color-canvas:         #FFFFFF;   /* Canvas / BG */
+  --color-ink:            #000000;   /* Surface Alt / Ink */
+  --color-hairline:       #EBEBEB;   /* Hairline / light surface */
+  --color-accent-rust:    #CE4722;   /* Accent 1 – Warm Rust */
+  --color-charcoal:       #2C2E3E;   /* Accent 2 – Deep Charcoal */
+  --color-neutral-1:      #080808;   /* Neutral 1 – near-black */
+  --color-surface-dark:   #1A1A1A;   /* Dark card surface */
+  --color-surface-light:  #F9F9F9;   /* Light card surface */
+
+  /* --- Typography --- */
+  --font-display:         'DM Serif Display', Georgia, serif;
+  --font-body:            'Inter', Helvetica, Arial, sans-serif;
+
+  /* --- Type Scale --- */
+  --text-display-lg:      3.875rem;  /* 62px */
+  --text-display-md:      2.5rem;    /* 40px */
+  --text-heading-lg:      2.25rem;   /* 36px */
+  --text-heading-md:      1.5rem;    /* 24px */
+  --text-body-xl:         1.4375rem; /* 23px */
+  --text-body-lg:         1.0625rem; /* 17px */
+  --text-body-md:         1rem;      /* 16px */
+  --text-body-sm:         0.875rem;  /* 14px */
+  --text-body-xs:         0.75rem;   /* 12px */
+
+  /* --- Line Heights --- */
+  --lh-display:   1.15;
+  --lh-heading:   1.2;
+  --lh-body-lg:   1.5;
+  --lh-body-md:   1.65;
+
+  /* --- Spacing --- */
+  --section-py:    3.5rem;           /* 56px vertical section padding */
+  --section-py-lg: 6rem;             /* 96px for spacious sections */
+  --section-py-xl: 7.5rem;           /* 120px for hero/cta */
+  --gap-sm:        1rem;             /* 16px */
+  --gap-md:        1.5rem;           /* 24px */
+  --gap-lg:        2rem;             /* 32px */
+  --gap-xl:        3rem;             /* 48px */
+
+  /* --- Layout --- */
+  --max-width:    1280px;
+  --nav-height:   68px;
+
+  /* --- Border Radius --- */
+  --radius-none:  0;
+  --radius-pill:  9999px;
+  --radius-sm:    6px;
+  --radius-md:    12px;
+
+  /* --- Z-Index Scale --- */
+  --z-base:       1;
+  --z-dropdown:   47;
+  --z-nav:        55;
+  --z-modal:      9999;
+  --z-toast:      10000;
+
+  /* --- Shadows --- */
+  --shadow-card:  0 2px 20px rgba(0,0,0,0.07);
+  --shadow-hover: 0 8px 40px rgba(0,0,0,0.13);
+  --shadow-nav:   0 1px 20px rgba(0,0,0,0.07);
+
+  /* --- Transitions --- */
+  --transition-fast:    0.15s ease;
+  --transition-base:    0.25s ease;
+  --transition-slow:    0.4s ease;
+  --transition-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ---------------------------------------------------------------
+   2. CSS RESET / BASE
+--------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body-md);
+  color: var(--color-ink);
+  background-color: var(--color-canvas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* ---------------------------------------------------------------
+   3. TYPOGRAPHY – GLOBAL SCALE
+--------------------------------------------------------------- */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: var(--lh-heading);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: var(--text-display-lg); }
+h2 { font-size: var(--text-heading-lg); }
+h3 { font-size: var(--text-heading-md); }
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body-md);
+}
+
+/* ---------------------------------------------------------------
+   4. LAYOUT UTILITIES
+--------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+/* Full-bleed sections have no horizontal padding on the section itself */
+section {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------
+   5. SECTION HEADER (Shared component)
+--------------------------------------------------------------- */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--gap-xl);
+}
+
+.section-header__eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-body-xs);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.section-header__title {
+  font-family: var(--font-display);
+  font-size: var(--text-heading-lg);
+  font-weight: 400;
+  color: var(--color-ink);
+  margin-bottom: 1.25rem;
+}
+
+.section-header__desc {
+  font-family: var(--font-body);
+  font-size: var(--text-body-lg);
+  line-height: var(--lh-body-lg);
+  color: #555;
+  max-width: 580px;
+  margin-inline: auto;
+}
+
+/* White variant (for dark/red backgrounds) */
+.section-header--white .section-header__eyebrow { color: rgba(255,255,255,0.65); }
+.section-header--white .section-header__title   { color: var(--color-canvas); }
+.section-header--white .section-header__desc    { color: rgba(255,255,255,0.7); }
+
+/* Light variant (for black background) */
+.section-header--light .section-header__eyebrow { color: var(--color-primary); }
+.section-header--light .section-header__title   { color: var(--color-canvas); }
+.section-header--light .section-header__desc    { color: rgba(255,255,255,0.6); }
+
+/* ---------------------------------------------------------------
+   6. SCROLL ANIMATION HELPERS
+--------------------------------------------------------------- */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-animate="slide-left"] {
+  transform: translateX(-32px);
+}
+[data-animate="slide-left"].is-visible {
+  transform: translateX(0);
+}
+
+[data-animate="slide-right"] {
+  transform: translateX(32px);
+}
+[data-animate="slide-right"].is-visible {
+  transform: translateX(0);
+}
+
+[data-animate="scale"] {
+  transform: scale(0.92);
+}
+[data-animate="scale"].is-visible {
+  transform: scale(1);
+}
+
+/* Stagger children inside animated containers */
+[data-animate]:nth-child(1) { transition-delay: 0.05s; }
+[data-animate]:nth-child(2) { transition-delay: 0.12s; }
+[data-animate]:nth-child(3) { transition-delay: 0.19s; }
+[data-animate]:nth-child(4) { transition-delay: 0.26s; }
+[data-animate]:nth-child(5) { transition-delay: 0.33s; }
+
+/* ---------------------------------------------------------------
+   7. RESPONSIVE TYPOGRAPHY
+--------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --text-display-lg:  2.5rem;    /* 40px on mobile */
+    --text-display-md:  1.75rem;   /* 28px */
+    --text-heading-lg:  1.75rem;   /* 28px */
+    --text-heading-md:  1.25rem;   /* 20px */
+    --section-py:       2.5rem;
+    --section-py-lg:    4rem;
+    --section-py-xl:    5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --text-display-lg: 2rem;       /* 32px on small mobile */
+    --text-heading-lg: 1.5rem;
+  }
+
+  .container {
+    padding-inline: 1.25rem;
+  }
+}

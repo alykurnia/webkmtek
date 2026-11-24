@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Katalog Hardware KMtek: Ekosistem perangkat IoT terpadu. Perangkat for Maker (Mappi32), kit praktikum for Education (SMK & Kampus), serta solusi tangguh for Industry." />
+  <title>Hardware - Katalog Resmi Perangkat IoT KMtek</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/views.css" />
+</head>
+<body class="page-maker-body">
+
+    <!-- ============================================================
+       NAVIGATION HEADER (STANDARDIZED MAKER NAVBAR)
+  ============================================================ -->
+  <header class="nav-header maker-nav-header" id="nav-header" role="banner">
+    <div class="container nav-header__inner">
+      <a href="index.html" class="maker-logo" aria-label="KMtek Beranda">
+        <span class="maker-logo-slashes">//</span>
+        <span>KMtek</span>
+        <span class="maker-logo-reg">&reg;</span>
+      </a>
+
+      <nav class="nav-header__nav" aria-label="Navigasi Utama">
+        <ul class="nav-header__list" role="list">
+          <li class="nav-header__item">
+            <a href="index.html" class="nav-header__link">Home</a>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="hardware.html" class="nav-header__link maker-nav-link-active" aria-expanded="true">
+              Hardware
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true" style="stroke: #ffffff;">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="hardware-maker.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔧</span>
+                <span>Maker</span>
+              </a>
+              <a href="hardware-education.html" class="maker-dropdown-item" role="menuitem">
+                <span>🎓</span>
+                <span>Education</span>
+              </a>
+              <a href="hardware-industry.html" class="maker-dropdown-item" role="menuitem">
+                <span>🏭</span>
+                <span>Industry</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="hardware.html" class="maker-dropdown-item is-selected" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Hardware &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="services.html" class="nav-header__link">
+              Services
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="services-training.html" class="maker-dropdown-item" role="menuitem">
+                <span>👨‍🏫</span>
+                <span>Training &amp; Magang Guru</span>
+              </a>
+              <a href="services-collab.html" class="maker-dropdown-item" role="menuitem">
+                <span>🤝</span>
+                <span>Collaborations Project</span>
+              </a>
+              <a href="services-bnsp.html" class="maker-dropdown-item" role="menuitem">
+                <span>📜</span>
+                <span>Sertifikasi BNSP</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="services.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Services &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="bootcamp.html" class="nav-header__link">
+              Bootcamp
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="bootcamp-webinar.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔴</span>
+                <span>Webinar Live</span>
+              </a>
+              <a href="bootcamp-ecourse.html" class="maker-dropdown-item" role="menuitem">
+                <span>💻</span>
+                <span>E-Course (On Going)</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="bootcamp.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Bootcamp &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item">
+            <a href="kmpedia.html" class="nav-header__link">KMPedia</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-header__hamburger" aria-label="Buka navigasi menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE NAVIGATION OVERLAY
+  ============================================================ -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav__close" aria-label="Tutup menu">&times;</button>
+    <nav aria-label="Navigasi Mobile" style="width: 100%;">
+      <ul class="mobile-nav__list" role="list">
+        <li class="mobile-nav__item">
+          <a href="index.html" class="mobile-nav__link">Beranda</a>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="hardware.html" class="mobile-nav__link is-active">Hardware</a>
+            <button class="mobile-nav__toggle is-open" aria-label="Toggle submenu hardware">▼</button>
+          </div>
+          <div class="mobile-nav__sub is-open">
+            <a href="hardware-maker.html" class="mobile-nav__sub-link">🔧 for Maker (Mappi32 &amp; Modul)</a>
+            <a href="hardware-education.html" class="mobile-nav__sub-link">🎓 for Education (IoT Kit)</a>
+            <a href="hardware-industry.html" class="mobile-nav__sub-link">🏭 for Industry (Basic Mertani)</a>
+            <a href="hardware.html" class="mobile-nav__sub-link is-active" style="color:var(--color-primary); font-weight:700;">Lihat Semua Hardware &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="services.html" class="mobile-nav__link">Services</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu services">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="services-training.html" class="mobile-nav__sub-link">Training &amp; Magang Guru</a>
+            <a href="services-collab.html" class="mobile-nav__sub-link">Collaborations Project &amp; TEFA</a>
+            <a href="services-bnsp.html" class="mobile-nav__sub-link">Sertifikasi BNSP (Hardware &amp; Platform)</a>
+            <a href="services.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Services &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="bootcamp.html" class="mobile-nav__link">Bootcamp</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu bootcamp">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="bootcamp-webinar.html" class="mobile-nav__sub-link">Webinar Live</a>
+            <a href="bootcamp-ecourse.html" class="mobile-nav__sub-link">E-Course (Modul, Video, Test, Sertifikat)</a>
+            <a href="bootcamp.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Bootcamp &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="kmpedia.html" class="mobile-nav__link">KMPedia</a>
+        </li>
+      </ul>
+      <a href="#katalog-shop" class="btn btn--primary mobile-nav__cta js-open-store-modal" data-product-name="Katalog Perangkat Hardware KMtek" style="width: 100%; margin-top: 1.5rem;">
+        Beli di Mitra
+      </a>
+    </nav>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT: HARDWARE HUB (UNIFIED DESIGN)
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section class="maker-hero-section">
+      <div class="container maker-hero-container">
+        <!-- Left Column: Copy & Actions -->
+        <div>
+          <div class="maker-tagline">
+            <span class="maker-slashes-red">//</span>
+            <span>KATALOG PERANGKAT</span>
+          </div>
+          <h1 class="maker-main-heading">
+            <span class="maker-word-red">Hardware</span>
+            Ekosistem perangkat IoT terpadu.
+          </h1>
+          <p class="maker-hero-paragraph">
+            Pusat perangkat keras IoT resmi KMtek: modul dan development board untuk maker, paket praktikum terstandar untuk edukasi vokasi SMK &amp; kampus, serta instrumen telemetri industri tangguh.
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="hardware-maker.html" class="maker-hero-cta-btn">
+              🔧 for Maker &rarr;
+            </a>
+            <a href="hardware-education.html" class="maker-card-btn-action" style="width: auto; padding: 0.85rem 1.4rem;">
+              🎓 for Education
+            </a>
+            <a href="hardware-industry.html" class="maker-card-btn-action" style="width: auto; padding: 0.85rem 1.4rem;">
+              🏭 for Industry
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Showcase -->
+        <div class="maker-hero-image-wrap">
+          <img
+            src="assets/images/maker-hero-workbench.png"
+            alt="Hardware KMtek Ekosistem Perangkat IoT"
+            class="maker-hero-image"
+            width="520"
+            height="365"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. THREE SUB-SECTIONS GATEWAY CARDS (SERAGAM DENGAN 3 BAGIAN) -->
+    <section style="background: #fafafc; padding: 3rem 0; border-top: 1px solid #f1f2f5; border-bottom: 1px solid #f1f2f5;">
+      <div class="container">
+        <div style="margin-bottom: 1.5rem;">
+          <span style="font-size: 0.85rem; font-weight: 800; color: #F52929; text-transform: uppercase; letter-spacing: 0.05em;">// 3 LINI UTAMA PERANGKAT</span>
+          <h2 style="font-size: 1.75rem; font-weight: 800; color: #111827; margin-top: 0.25rem;">Pilih Kategori Solusi Sesuai Kebutuhan Anda</h2>
+        </div>
+
+        <div class="hardware-hub-categories">
+          <!-- Gateway Card 1: for Maker -->
+          <a href="hardware-maker.html" class="hardware-hub-card">
+            <div class="hardware-hub-card__top">
+              <div class="hardware-hub-card__icon">🛠️</div>
+              <span class="hardware-hub-card__badge">Maker &amp; DIY</span>
+            </div>
+            <h3 class="hardware-hub-card__title">for Maker</h3>
+            <p class="hardware-hub-card__desc">
+              Development board Mappi32 ESP32 berdaya tinggi, modul komunikasi jarak jauh (LoRa, LTE, Wi-Fi), antena presisi, dan brand kolaborasi resmi.
+            </p>
+            <span class="hardware-hub-card__link">Buka Halaman for Maker &rarr;</span>
+          </a>
+
+          <!-- Gateway Card 2: for Education -->
+          <a href="hardware-education.html" class="hardware-hub-card">
+            <div class="hardware-hub-card__top">
+              <div class="hardware-hub-card__icon">🎓</div>
+              <span class="hardware-hub-card__badge">Edukasi &amp; STEM</span>
+            </div>
+            <h3 class="hardware-hub-card__title">for Education</h3>
+            <p class="hardware-hub-card__desc">
+              Paket simulator IoT siap pakai untuk praktikum SMK dan kampus: General Kit, Smart Garden, Smart Home, Smart Parking, dan Smart Health lengkap modul ajar.
+            </p>
+            <span class="hardware-hub-card__link">Buka Halaman for Education &rarr;</span>
+          </a>
+
+          <!-- Gateway Card 3: for Industry -->
+          <a href="hardware-industry.html" class="hardware-hub-card">
+            <div class="hardware-hub-card__top">
+              <div class="hardware-hub-card__icon">🏭</div>
+              <span class="hardware-hub-card__badge">Heavy Industry</span>
+            </div>
+            <h3 class="hardware-hub-card__title">for Industry</h3>
+            <p class="hardware-hub-card__desc">
+              Perangkat tangguh bersertifikasi IP67/IP68: Basic Maintenance getaran &amp; suhu mesin, Industrial Gateway DIN-Rail, serta jajaran sensor presisi Mertani.
+            </p>
+            <span class="hardware-hub-card__link">Buka Halaman for Industry &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. INTERACTIVE FILTER TABS & SEARCH CONTROLS -->
+    <div class="view-controls" id="katalog-shop">
+      <div class="container view-controls__inner">
+        <div class="view-tabs" role="tablist" aria-label="Kategori Hardware">
+          <button class="view-tab is-active" data-tab="all" role="tab">Semua Hardware <span class="view-tab__count">15</span></button>
+          <button class="view-tab" data-tab="maker" role="tab">🛠️ for Maker <span class="view-tab__count">4</span></button>
+          <button class="view-tab" data-tab="education" role="tab">🎓 for Education <span class="view-tab__count">5</span></button>
+          <button class="view-tab" data-tab="industry" role="tab">🏭 for Industry <span class="view-tab__count">6</span></button>
+        </div>
+
+        <div class="view-search">
+          <span class="view-search__icon" aria-hidden="true">🔍</span>
+          <input type="text" class="view-search__input" placeholder="Cari hardware (Mappi32, Smart Garden, Mertani)..." aria-label="Cari hardware" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. UNIFIED PRODUCTS SHOP GRID -->
+    <div class="view-body">
+      <div class="container">
+
+        <!-- Shop Notice -->
+        <div class="shop-notice" role="alert">
+          <div class="shop-notice__icon">🛒</div>
+          <div class="shop-notice__text">
+            <strong>Katalog Belanja Resmi Mitra KMtek:</strong> Seluruh produk hardware di bawah ini dapat dibeli langsung melalui official store marketplace mitra kami (Tokopedia, Shopee, &amp; WhatsApp Distributor Resmi) dengan garansi resmi dan faktur pajak.
+          </div>
+        </div>
+
+        <!-- ================= FOR MAKER PRODUCTS ================= -->
+        <div style="margin: 2.5rem 0 1.25rem 0; display: flex; justify-content: space-between; align-items: center;" data-section-category="maker">
+          <h2 class="maker-products-title">
+            <span class="maker-slashes-red">//</span>
+            <span>Produk for Maker</span>
+          </h2>
+          <a href="hardware-maker.html" class="maker-see-all">Buka halaman for Maker &rarr;</a>
+        </div>
+
+        <div class="maker-cards-grid" style="margin-bottom: 3.5rem;">
+          <!-- Maker 1: MAPPI32 -->
+          <article class="maker-product-card" data-category="maker">
+            <div class="maker-card-img-container">
+              <img src="assets/images/maker-product-mappi32.png" alt="MAPPI32 ESP32 Board" loading="lazy" />
+            </div>
+            <h3 class="maker-card-heading">Development Board Mappi32</h3>
+            <p class="maker-card-text">Papan pengembangan IoT berbasis ESP32, andal untuk berbagai proyek maker.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="Development Board Mappi32" data-product-price="Rp 185.000" data-product-desc="Board mikrokontroler ESP32 kelas industri dengan arsitektur dual-core 240MHz, sirkuit proteksi tegangan, LiPo battery charger terintegrasi, dan kompatibel Arduino IDE & MicroPython." data-product-specs="ESP32 Dual Core 240MHz|Wi-Fi 802.11 b/g/n & BLE 4.2|Port USB Type-C|LiPo TP4056 Charger|Ultra Low-Power Deep Sleep">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Maker 2: Modul Komunikasi -->
+          <article class="maker-product-card" data-category="maker">
+            <div class="maker-card-img-container">
+              <img src="assets/images/maker-product-module.png" alt="Modul Komunikasi IoT" loading="lazy" />
+            </div>
+            <h3 class="maker-card-heading">Modul Komunikasi IoT</h3>
+            <p class="maker-card-text">Berbagai modul komunikasi (LoRa, LTE, Wi-Fi, Bluetooth) untuk konektivitas IoT.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="Modul Komunikasi IoT" data-product-price="Rp 95.000" data-product-desc="Pilihan transceiver data jarak jauh dan seluler: Modul LoRa RFM95W (915MHz), ESP32-C3 WiFi/BLE, SIM800L GSM/GPRS, dan Quectel NB-IoT bersertifikasi SDPPI." data-product-specs="LoRa SX1276 915MHz (>5km)|SIM800L Seluler Quad-Band|Quectel LTE Cat-M1 & NB-IoT|ESP32-C3 WiFi & Bluetooth 5|Antenna Connector IPEX & SMA">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Maker 3: Antena-antena -->
+          <article class="maker-product-card" data-category="maker">
+            <div class="maker-card-img-container">
+              <img src="assets/images/maker-product-antenna.png" alt="Antena IoT High-Gain" loading="lazy" />
+            </div>
+            <h3 class="maker-card-heading">Antena-Antena IoT</h3>
+            <p class="maker-card-text">Antena berkinerja tinggi untuk konektivitas yang lebih stabil dan optimal.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="Antena-Antena IoT" data-product-price="Rp 35.000" data-product-desc="Jajaran antena omni-directional dan directional frekuensi 433MHz, 868MHz, 915MHz, serta 2.4GHz WiFi dengan gain 3dBi hingga 5.8dBi untuk jangkauan sinyal maksimal." data-product-specs="Antena LoRa Rubber Duck 915MHz 3dBi|Antena Fiberglass Outdoor 5.8dBi|Kabel Pigtail IPEX to SMA Female|VSWR < 1.5 efisiensi tinggi">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Maker 4: Produk Brand Kerja Sama -->
+          <article class="maker-product-card" data-category="maker" style="border-style: dashed; background: #fafafa;">
+            <div class="maker-card-img-container" style="background:#1e1e24; border-radius:8px;">
+              <span style="font-size:2.5rem;">🤝</span>
+            </div>
+            <h3 class="maker-card-heading">Produk Brand Kerja Sama</h3>
+            <p class="maker-card-text">Perangkat keras dan extension shield hasil sinergi resmi KMtek bersama brand teknologi global &amp; prinsipal terkemuka.</p>
+            <button class="maker-card-btn-action js-open-service-modal" data-service-name="Notifikasi Rilis Produk Brand Kerja Sama" style="background:#475569; color:#fff; border-color:#475569;">
+              Daftar Antrean &rarr;
+            </button>
+          </article>
+        </div>
+
+        <!-- ================= FOR EDUCATION PRODUCTS ================= -->
+        <div style="margin: 2.5rem 0 1.25rem 0; display: flex; justify-content: space-between; align-items: center;" data-section-category="education">
+          <h2 class="maker-products-title">
+            <span class="maker-slashes-red">//</span>
+            <span>Paket Edukasi KMtek (SMK &amp; Kampus)</span>
+          </h2>
+          <a href="hardware-education.html" class="maker-see-all">Buka halaman for Education &rarr;</a>
+        </div>
+
+        <div class="maker-cards-grid" style="margin-bottom: 3.5rem;">
+          <!-- Edu 1: General Kit -->
+          <article class="maker-product-card" data-category="education">
+            <div class="maker-card-img-container">
+              <img src="assets/images/education-product-general-kit.png" alt="General Kit Edukasi" loading="lazy" />
+            </div>
+            <h3 class="maker-card-heading">General Kit</h3>
+            <p class="maker-card-text">Paket dasar IoT untuk pembelajaran, praktikum, dan proyek siswa/mahasiswa.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="General IoT Learning Kit" data-product-price="Rp 385.000" data-product-desc="Starter kit komprehensif untuk pengenalan dasar IoT: Board Mappi32, breadboard, 12 modul sensor & aktuator, LCD I2C, buzzer, kabel jumper, serta buku panduan 15 proyek praktikum." data-product-specs="Board Utama: Mappi32 ESP32 USB-C|Sensor: DHT11, HC-SR04, LDR, PIR|Display: OLED 0.96 inch I2C|Aktuator: Relay 1-Channel, Buzzer, LED RGB|Modul Ajar PDF & Source Code Lengkap">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Edu 2: Smart Garden -->
+          <article class="maker-product-card" data-category="education">
+            <div class="maker-card-img-container">
+              <img src="assets/images/education-product-smart-garden.png" alt="Smart Garden Kit" loading="lazy" />
+            </div>
+            <h3 class="maker-card-heading">Smart Garden</h3>
+            <p class="maker-card-text">Paket IoT untuk memantau kelembaban tanah, suhu, dan lingkungan tanaman.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="Smart Garden IoT Kit" data-product-price="Rp 450.000" data-product-desc="Kit simulator pertanian presisi & smart green house: Sensor kelembapan tanah kapasitif anti-karat, pompa air DC mini, sensor suhu & kelembapan udara, serta kontrol siram otomatis via smartphone." data-product-specs="Capacitive Soil Moisture Sensor v1.2|Mini Submersible Water Pump DC 5V|Sensor DHT22 Suhu Presisi|Driver Pompa MOSFET / Relay|Dashboard Web & Mobile App">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Edu 3: Smart Home -->
+          <article class="maker-product-card" data-category="education">
+            <div class="maker-card-img-container">
+              <img src="assets/images/education-product-smart-home.png" alt="Smart Home Kit" loading="lazy" />
+            </div>
+            <h3 class="maker-card-heading">Smart Home</h3>
+            <p class="maker-card-text">Paket pembelajaran sistem rumah pintar: kontrol, monitoring, dan otomasi berbasis IoT.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="Smart Home Automation Kit" data-product-price="Rp 520.000" data-product-desc="Simulasi rumah pintar modern: Sensor gas MQ-2, sensor api/flame, sensor gerak PIR, relay kontrol lampu, maket rumah akrilik, dan bot Telegram." data-product-specs="Board Mappi32 ESP32|Maket Miniatur Rumah Akrilik|Sensor Gas MQ-2 & Flame Api|Mini Servo SG90 Smart Lock|Kontrol via Web Dashboard & Telegram Bot">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Edu 4: Smart Parking -->
+          <article class="maker-product-card" data-category="education">
+            <div class="maker-card-img-container" style="background:#f1f5f9; border-radius:8px;">
+              <span style="font-size:2.5rem;">🅿️</span>
+            </div>
+            <h3 class="maker-card-heading">Smart Parking</h3>
+            <p class="maker-card-text">Simulasi sistem perparkiran cerdas: Deteksi ketersediaan slot parkir multi-spot via ultrasonik, servo palang pintu otomatis, dan display OLED.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="Smart Parking IoT Kit" data-product-price="Rp 620.000" data-product-desc="Kit simulator sistem perparkiran cerdas perkotaan: Sensor ultrasonik multi-slot, palang gerbang servo otomatis, dan display kapasitas real-time." data-product-specs="Board Mappi32|3x Sensor Ultrasonik HC-SR04|TowerPro Servo Motor|Display OLED 0.96 inch|Maket Parkir Akrilik Presisi">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Edu 5: Smart Health -->
+          <article class="maker-product-card" data-category="education">
+            <div class="maker-card-img-container" style="background:#fdf2f8; border-radius:8px;">
+              <span style="font-size:2.5rem;">🩺</span>
+            </div>
+            <h3 class="maker-card-heading">Smart Health</h3>
+            <p class="maker-card-text">Kit telemetri kesehatan: Sensor detak jantung &amp; SpO2 MAX30102, sensor suhu tubuh non-kontak inframerah MLX90614, serta grafik web real-time.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="Smart Health IoT Kit" data-product-price="Rp 680.000" data-product-desc="Kit telemetri tanda vital medis: Sensor denyut nadi SpO2 optik MAX30102 dan sensor suhu inframerah non-kontak MLX90614." data-product-specs="Board Mappi32|Sensor MAX30102 Detak Jantung & SpO2|Sensor Suhu Tubuh MLX90614 Inframerah|Visualisasi Grafik Web Real-Time|Library Filter Digital Medis">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+        </div>
+
+        <!-- ================= FOR INDUSTRY PRODUCTS ================= -->
+        <div style="margin: 2.5rem 0 1.25rem 0; display: flex; justify-content: space-between; align-items: center;" data-section-category="industry">
+          <h2 class="maker-products-title">
+            <span class="maker-slashes-red">//</span>
+            <span>Solusi Hardware untuk Industri</span>
+          </h2>
+          <a href="hardware-industry.html" class="maker-see-all">Buka halaman for Industry &rarr;</a>
+        </div>
+
+        <div class="maker-cards-grid" style="margin-bottom: 3.5rem;">
+          <!-- Ind 1: Basic Maintenance -->
+          <article class="maker-product-card" data-category="industry">
+            <div class="maker-card-img-container">
+              <img src="assets/images/industry-product-maintenance.png" alt="Produk Basic Maintenance" loading="lazy" />
+            </div>
+            <h3 class="maker-card-heading">Produk Basic Maintenance</h3>
+            <p class="maker-card-text">Paket IoT untuk monitoring kondisi peralatan (getaran, suhu, jam operasi) dan perawatan preventif.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="Produk Basic Maintenance Industri" data-product-price="Rp 2.450.000" data-product-desc="Paket IoT untuk monitoring kondisi peralatan (getaran, suhu, jam operasi mesin) dan perawatan preventif (Predictive Maintenance)." data-product-specs="Casing IP67 Weatherproof Aluminium|Sensor Getaran 3-Axis & Suhu PT100|LoRaWAN 915MHz Jarak Jauh|Status LED Alert Dua Warna|Baterai Industri Tahan 3+ Tahun">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Ind 2: Industrial Gateway -->
+          <article class="maker-product-card" data-category="industry">
+            <div class="maker-card-img-container">
+              <img src="assets/images/industry-product-gateway.png" alt="Industrial Gateway" loading="lazy" />
+            </div>
+            <h3 class="maker-card-heading">Industrial Gateway</h3>
+            <p class="maker-card-text">Gateway IoT industri untuk mengumpulkan, mengolah, dan mengirimkan data secara aman.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="KMtek Industrial Gateway" data-product-price="Rp 4.800.000" data-product-desc="Gateway IoT industri untuk mengumpulkan, mengolah (Edge Computing), dan mengirimkan data secara aman dari ratusan sensor lapangan." data-product-specs="Prosesor Quad-Core ARM Cortex-A53|4G LTE Dual SIM Failover & Ethernet|2x Isolated RS485 Modbus RTU|Embedded Industrial Linux OS|DIN-Rail Mounting Standar Panel">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Ind 3: Sensor Monitoring -->
+          <article class="maker-product-card" data-category="industry">
+            <div class="maker-card-img-container">
+              <img src="assets/images/industry-product-sensors.png" alt="Sensor Monitoring" loading="lazy" />
+            </div>
+            <h3 class="maker-card-heading">Sensor Monitoring</h3>
+            <p class="maker-card-text">Beragam sensor industri (suhu, tekanan, kelembaban, getaran, dll) untuk pemantauan operasional yang akurat.</p>
+            <button class="maker-card-btn-action js-open-detail-modal" data-product-name="Industrial Sensor Monitoring Suite" data-product-price="Mulai Rp 850.000" data-product-desc="Beragam sensor industri bersertifikasi kalibrasi untuk pemantauan parameter fluida pipa, boiler, tangki oli, dan getaran bearing." data-product-specs="Material Stainless Steel SUS316L|Output 4-20mA Current Loop & Modbus RS485|Proteksi Rating IP68 Kedap Air|Sertifikat Kalibrasi Pabrik">
+              Lihat Detail &rarr;
+            </button>
+          </article>
+
+          <!-- Ind 4: Mertani AWS -->
+          <article class="maker-product-card" data-category="industry">
+            <div class="maker-card-img-container" style="background:#0f172a; border-radius:8px;">
+              <span style="font-size:2.5rem;">🌦️</span>
+            </div>
+            <h3 class="maker-card-heading">Mertani AWS Weather Station</h3>
+            <p class="maker-card-text">Stasiun cuaca otomatis kelas industri: Pengukur curah hujan tipping bucket 0.2mm, anemometer angin 360°, solar radiasi, dan telemetri LoRaWAN/4G.</p>
+            <button class="maker-card-btn-action js-open-service-modal" data-service-name="Quotation Mertani AWS Weather Station">
+              Minta Penawaran &rarr;
+            </button>
+          </article>
+
+          <!-- Ind 5: Mertani Soil Moisture -->
+          <article class="maker-product-card" data-category="industry">
+            <div class="maker-card-img-container" style="background:#0f172a; border-radius:8px;">
+              <span style="font-size:2.5rem;">🌱</span>
+            </div>
+            <h3 class="maker-card-heading">Mertani Soil Moisture Telemetry</h3>
+            <p class="maker-card-text">Probe multi-kedalaman industri tahan air IP68 untuk memantau kelembapan tanah, EC salinitas, nutrisi NPK, dan suhu tanah secara kontinu di perkebunan.</p>
+            <button class="maker-card-btn-action js-open-service-modal" data-service-name="Quotation Mertani Soil Moisture Telemetry">
+              Minta Penawaran &rarr;
+            </button>
+          </article>
+
+          <!-- Ind 6: Mertani Water Level -->
+          <article class="maker-product-card" data-category="industry">
+            <div class="maker-card-img-container" style="background:#0f172a; border-radius:8px;">
+              <span style="font-size:2.5rem;">🌊</span>
+            </div>
+            <h3 class="maker-card-heading">Mertani Water Level &amp; Flood</h3>
+            <p class="maker-card-text">Sensor radar dan ultrasonik non-kontak untuk monitoring ketinggian air sungai, bendungan, dan saluran drainase perkebunan dengan peringatan dini banjir.</p>
+            <button class="maker-card-btn-action js-open-service-modal" data-service-name="Quotation Mertani Water Level Monitor">
+              Minta Penawaran &rarr;
+            </button>
+          </article>
+        </div>
+
+        <!-- 5. BOTTOM BANNER (FAMILY DESIGN WITH RED CORNER ACCENT) -->
+        <section class="maker-bottom-cta-section" style="margin: 3.5rem 0;" aria-label="Konsultasi Kebutuhan Hardware">
+          <div class="maker-bottom-grid">
+            <div>
+              <h3 class="maker-bottom-heading">
+                <span class="maker-slashes-red">//</span>
+                <span>Konsultasikan Kebutuhan Hardware Anda</span>
+              </h3>
+              <p class="maker-bottom-text">
+                Dari prototipe pertama para maker, kurikulum laboratorium sekolah, hingga instalasi skala industri — tim teknis KMtek siap mendukung kebutuhan perangkat keras IoT Anda.
+              </p>
+              <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20ingin%20konsultasi%20katalog%20hardware" target="_blank" rel="noopener" class="maker-hero-cta-btn">
+                  Hubungi Admin WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+            <div class="maker-bottom-image-box">
+              <img
+                src="assets/images/maker-bottom-laptop.png"
+                alt="Konsultasi Hardware KMtek"
+                width="205"
+                height="109"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <!-- Red Diagonal Corner Accent -->
+          <div class="maker-bottom-accent-triangle" aria-hidden="true"></div>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ============================================================
+       INTERACTIVE MODAL OVERLAY (PARTNER STORE & DETAILS)
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Tutup jendela modal">&times;</button>
+      <h3 class="modal-title" id="modal-title">Judul Modal</h3>
+      <p class="modal-subtitle" id="modal-subtitle">Subjudul modal informasi.</p>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__newsletter-strip">
+      <div class="container footer__newsletter-inner">
+        <div class="footer__newsletter-text">
+          <strong>Tetap Terinformasi.</strong> Dapatkan wawasan tren IoT, rilis modul hardware terbaru, dan penawaran toko resmi di email Anda.
+        </div>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih! Anda telah terdaftar.');" aria-label="Langganan newsletter">
+          <input type="email" placeholder="Alamat email Anda" class="footer__newsletter-input" aria-label="Email untuk newsletter" required />
+          <button type="submit" class="btn btn--primary">Berlangganan</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__inner">
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="KMTek Beranda">
+            <span class="footer__logo-km">KM</span><span class="footer__logo-tek">Tek</span>
+          </a>
+          <p class="footer__tagline">
+            Menghubungkan perangkat,<br />memberdayakan industri &amp; edukasi.
+          </p>
+          <div class="footer__socials" role="list" aria-label="Tautan media sosial">
+            <a href="#" role="listitem" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="Twitter/X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.907l4.274 5.65zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Tautan Hardware">
+          <h3 class="footer__col-heading">Hardware</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="hardware-maker.html" class="footer__link">for Maker (Mappi32)</a></li>
+            <li><a href="hardware-education.html" class="footer__link">for Education (IoT Kit)</a></li>
+            <li><a href="hardware-industry.html" class="footer__link">for Industry (Basic Mertani)</a></li>
+            <li><a href="hardware.html" class="footer__link">Lihat Semua Hardware</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Services">
+          <h3 class="footer__col-heading">Services</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="services-training.html" class="footer__link">Magang Guru SMK &amp; Dosen</a></li>
+            <li><a href="services-collab.html" class="footer__link">Collaborations Project</a></li>
+            <li><a href="services-collab.html" class="footer__link">Teaching Factory (TEFA)</a></li>
+            <li><a href="services-bnsp.html" class="footer__link">Sertifikasi BNSP IoT</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Bootcamp &amp; Hub">
+          <h3 class="footer__col-heading">Bootcamp &amp; Hub</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="bootcamp-webinar.html" class="footer__link">Webinar Live Streaming</a></li>
+            <li><a href="bootcamp-ecourse.html" class="footer__link">E-Course (4 Pilar Belajar)</a></li>
+            <li><a href="kmpedia.html" class="footer__link">KMPedia Knowledge Hub</a></li>
+            <li><a href="kmpedia.html" class="footer__link">Skematik &amp; Wiring Diagram</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2026</span> PT Kreasi Mandiri Teknologi (KMtek). Seluruh hak cipta dilindungi undang-undang.
+        </p>
+        <div class="footer__meta-links">
+          <a href="#" class="footer__meta-link">Kebijakan Privasi</a>
+          <a href="#" class="footer__meta-link">Syarat &amp; Ketentuan</a>
+          <a href="#" class="footer__meta-link">Mitra Resmi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas halaman">&uarr;</button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <!-- Floating Contact Chat Pill -->
+  <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20ingin%20konsultasi%20seputar%20produk%20dan%20layanan%20IoT" target="_blank" rel="noopener" class="floating-chat-pill" aria-label="Hubungi kami melalui WhatsApp">
+    <span aria-hidden="true">&#128172;</span>
+    <span>Let's Chat</span>
+  </a>
+
+</body>
+</html>

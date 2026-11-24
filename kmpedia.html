@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KMPedia KMtek - Pusat Pengetahuan IoT &amp; Teknologi: Artikel mendalam seputar sensor, mikrokontroler ESP32, AI, Robotika industri, dan digitalisasi manufaktur." />
+  <title>KMPedia - Pusat Pengetahuan &amp; Artikel Teknologi IoT KMtek</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/views.css" />
+</head>
+<body class="page-maker-body">
+
+    <!-- ============================================================
+       NAVIGATION HEADER (STANDARDIZED MAKER NAVBAR)
+  ============================================================ -->
+  <header class="nav-header maker-nav-header" id="nav-header" role="banner">
+    <div class="container nav-header__inner">
+      <a href="index.html" class="maker-logo" aria-label="KMtek Beranda">
+        <span class="maker-logo-slashes">//</span>
+        <span>KMtek</span>
+        <span class="maker-logo-reg">&reg;</span>
+      </a>
+
+      <nav class="nav-header__nav" aria-label="Navigasi Utama">
+        <ul class="nav-header__list" role="list">
+          <li class="nav-header__item">
+            <a href="index.html" class="nav-header__link">Home</a>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="hardware.html" class="nav-header__link">
+              Hardware
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="hardware-maker.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔧</span>
+                <span>Maker</span>
+              </a>
+              <a href="hardware-education.html" class="maker-dropdown-item" role="menuitem">
+                <span>🎓</span>
+                <span>Education</span>
+              </a>
+              <a href="hardware-industry.html" class="maker-dropdown-item" role="menuitem">
+                <span>🏭</span>
+                <span>Industry</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="hardware.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Hardware &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="services.html" class="nav-header__link">
+              Services
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="services-training.html" class="maker-dropdown-item" role="menuitem">
+                <span>👨‍🏫</span>
+                <span>Training &amp; Magang Guru</span>
+              </a>
+              <a href="services-collab.html" class="maker-dropdown-item" role="menuitem">
+                <span>🤝</span>
+                <span>Collaborations Project</span>
+              </a>
+              <a href="services-bnsp.html" class="maker-dropdown-item" role="menuitem">
+                <span>📜</span>
+                <span>Sertifikasi BNSP</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="services.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Services &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item nav-header__item--has-dropdown">
+            <a href="bootcamp.html" class="nav-header__link">
+              Bootcamp
+              <svg class="nav-header__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="maker-dropdown-menu" role="menu">
+              <a href="bootcamp-webinar.html" class="maker-dropdown-item" role="menuitem">
+                <span>🔴</span>
+                <span>Webinar Live</span>
+              </a>
+              <a href="bootcamp-ecourse.html" class="maker-dropdown-item" role="menuitem">
+                <span>💻</span>
+                <span>E-Course (On Going)</span>
+              </a>
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); margin: 0.25rem 0;"></div>
+              <a href="bootcamp.html" class="maker-dropdown-item" style="font-size: 0.8rem; color: #ff6b6b;" role="menuitem">
+                <span>Semua Bootcamp &rarr;</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-header__item">
+            <a href="kmpedia.html" class="nav-header__link maker-nav-link-active">KMPedia</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-header__hamburger" aria-label="Buka navigasi menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE NAVIGATION OVERLAY
+  ============================================================ -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav__close" aria-label="Tutup menu">&times;</button>
+    <nav aria-label="Navigasi Mobile" style="width: 100%;">
+      <ul class="mobile-nav__list" role="list">
+        <li class="mobile-nav__item">
+          <a href="index.html" class="mobile-nav__link">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="hardware.html" class="mobile-nav__link">Hardware</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu hardware">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="hardware-maker.html" class="mobile-nav__sub-link">🔧 for Maker (Mappi32 &amp; Modul)</a>
+            <a href="hardware-education.html" class="mobile-nav__sub-link">🎓 for Education (IoT Kit)</a>
+            <a href="hardware-industry.html" class="mobile-nav__sub-link">🏭 for Industry (Basic Mertani)</a>
+            <a href="hardware.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Lihat Semua Hardware &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="services.html" class="mobile-nav__link">Services</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu services">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="services-training.html" class="mobile-nav__sub-link">👨‍🏫 Training &amp; Magang Guru</a>
+            <a href="services-collab.html" class="mobile-nav__sub-link">🤝 Collaborations Project &amp; TEFA</a>
+            <a href="services-bnsp.html" class="mobile-nav__sub-link">📜 Sertifikasi BNSP (Hardware &amp; Platform)</a>
+            <a href="services.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Services &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <div class="mobile-nav__item-header">
+            <a href="bootcamp.html" class="mobile-nav__link">Bootcamp</a>
+            <button class="mobile-nav__toggle" aria-label="Toggle submenu bootcamp">▼</button>
+          </div>
+          <div class="mobile-nav__sub">
+            <a href="bootcamp-webinar.html" class="mobile-nav__sub-link">🔴 Webinar Live</a>
+            <a href="bootcamp-ecourse.html" class="mobile-nav__sub-link">💻 E-Course (Modul, Video, Test, Sertifikat)</a>
+            <a href="bootcamp.html" class="mobile-nav__sub-link" style="color:var(--color-primary); font-weight:700;">Buka Halaman Bootcamp &rarr;</a>
+          </div>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="kmpedia.html" class="mobile-nav__link is-active" style="color:var(--color-primary); font-weight:700;">KMPedia</a>
+        </li>
+      </ul>
+      <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20ingin%20konsultasi%20seputar%20teknologi%20IoT" target="_blank" rel="noopener" class="btn btn--primary mobile-nav__cta" style="width: 100%; margin-top: 1.5rem; border-radius: 999px;">
+        &#128172; Konsultasi
+      </a>
+    </nav>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT: KMPEDIA KNOWLEDGE HUB (EXACT MOCKUP)
+  ============================================================ -->
+  <main id="main-content" class="kmpedia-body-wrap">
+    <div class="container">
+
+      <!-- 1. TOP BAR: "Semua Artikel" + SEARCH + CATEGORY FILTER PILLS -->
+      <section class="kmpedia-top-bar" aria-label="Filter Artikel KMPedia">
+        <!-- Left: Red Vertical Bar + Title -->
+        <div class="kmpedia-section-heading-wrap">
+          <div class="kmpedia-red-bar" aria-hidden="true"></div>
+          <h1 class="kmpedia-bar-title">Semua Artikel</h1>
+        </div>
+
+        <!-- Center: Search Input -->
+        <div class="kmpedia-search-box">
+          <span style="font-size: 0.95rem; color: #9ca3af;" aria-hidden="true">🔍</span>
+          <input
+            type="text"
+            class="kmpedia-search-input view-search__input"
+            placeholder="Cari artikel teknologi..."
+            aria-label="Cari artikel teknologi"
+          />
+        </div>
+
+        <!-- Right: Category Filter Pills -->
+        <div class="kmpedia-cat-pills" role="tablist" aria-label="Filter Kategori">
+          <button class="kmpedia-pill-btn is-active view-tab" data-tab="all" role="tab">Semua</button>
+          <button class="kmpedia-pill-btn view-tab" data-tab="iot" role="tab">IoT</button>
+          <button class="kmpedia-pill-btn view-tab" data-tab="elektronika" role="tab">Elektronika</button>
+          <button class="kmpedia-pill-btn view-tab" data-tab="ai" role="tab">AI</button>
+          <button class="kmpedia-pill-btn view-tab" data-tab="energi" role="tab">Energi</button>
+          <button class="kmpedia-pill-btn view-tab" data-tab="industri" role="tab">Industri</button>
+        </div>
+      </section>
+
+      <!-- 2. FEATURED ARTICLE BANNER (ARTIKEL PILIHAN) -->
+      <article class="kmpedia-featured-banner js-open-article-modal" data-article-title="Dari sensor ke solusi: memahami perkembangan IoT di Indonesia" data-article-category="IoT & Industri" tabindex="0" role="button" aria-label="Baca Artikel Pilihan">
+        <div class="kmpedia-featured-content">
+          <span class="kmpedia-featured-tag">ARTIKEL PILIHAN</span>
+          <h2 class="kmpedia-featured-title">
+            Dari sensor ke solusi: memahami perkembangan IoT di Indonesia
+          </h2>
+          <p class="kmpedia-featured-desc">
+            Melihat bagaimana teknologi IoT berkembang di Indonesia, dari adopsi di berbagai industri hingga peluangnya dalam menyelesaikan tantangan nyata di lapangan.
+          </p>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+            <div class="kmpedia-featured-meta-row">
+              <div class="kmpedia-author-chip">
+                <div class="kmpedia-author-avatar">👤</div>
+                <span style="font-weight: 700;">marketing KMTek</span>
+              </div>
+              <div>📅 20 Jan 2025</div>
+              <div>📖 7 menit baca</div>
+            </div>
+
+            <button class="maker-hero-cta-btn" style="padding: 0.55rem 1.25rem; font-size: 0.86rem;">
+              Baca Artikel &rarr;
+            </button>
+          </div>
+        </div>
+
+        <div class="kmpedia-featured-img-wrap">
+          <img
+            src="assets/images/kmpedia-hero-featured.png"
+            alt="Perkembangan IoT di Indonesia KMtek"
+            class="kmpedia-featured-img"
+            width="486"
+            height="142"
+            loading="eager"
+          />
+          <div class="kmpedia-featured-img-overlay" aria-hidden="true"></div>
+        </div>
+
+        <!-- Hidden Full Content for Interactive Reader Modal -->
+        <div class="kmpedia-full-content" style="display:none;">
+          <p>Implementasi teknologi Internet of Things (IoT) di Indonesia telah mengalami transformasi signifikan dalam 5 tahun terakhir. Bukan lagi sekadar proyek hobi laboratorium, melainkan pilar utama efisiensi industri modern, agrikultur cerdas, dan monitoring infrastruktur publik.</p>
+          <h4>Tantangan Nyata di Lapangan</h4>
+          <p>Konektivitas di daerah pelosok, konsumsi daya baterai modul, dan interoperabilitas sensor industri menjadi tiga tantangan kunci yang dijawab oleh KMtek melalui arsitektur Mappi32 dan integrasi edge computing.</p>
+          <h4>Menuju Ekosistem Mandiri</h4>
+          <p>Dengan hadirnya standar kompetensi BNSP dan penyelarasan kurikulum vokasi, talenta IoT Indonesia siap membangun solusi yang kompetitif di kancah global.</p>
+        </div>
+      </article>
+
+      <!-- 3. SECTION "Artikel terbaru" (8-CARD GRID) -->
+      <section aria-label="Artikel Terbaru KMPedia">
+        <div class="kmpedia-section-heading-wrap" style="margin-bottom: 0.75rem;">
+          <div class="kmpedia-red-bar" aria-hidden="true"></div>
+          <h2 class="kmpedia-bar-title">Artikel terbaru</h2>
+        </div>
+
+        <div class="kmpedia-cards-grid">
+
+          <!-- Card 1: Resistor -->
+          <article class="kmpedia-card js-open-article-modal" data-category="elektronika" data-article-title="Resistor: fungsi, jenis, dan cara memilihnya untuk rangkaian elektronik" data-article-category="Elektronika" tabindex="0" role="button">
+            <div class="kmpedia-card-img-wrap">
+              <span class="kmpedia-card-badge">Elektronika</span>
+              <img
+                src="assets/images/kmpedia-thumb-resistor.png"
+                alt="Resistor rangkaian elektronik"
+                class="kmpedia-card-img"
+                width="220"
+                height="76"
+                loading="lazy"
+              />
+            </div>
+            <div class="kmpedia-card-body">
+              <div class="kmpedia-card-meta-top">
+                <span>👤 marketing KMTek</span>
+                <span>•</span>
+                <span>17 Jan 2025</span>
+                <span>•</span>
+                <span>5 menit baca</span>
+              </div>
+              <h3 class="kmpedia-card-title">Resistor: fungsi, jenis, dan cara memilihnya untuk rangkaian elektronik</h3>
+              <p class="kmpedia-card-snippet">Mengenal resistor lebih dalam, mulai dari fungsi dasar, jenis-jenis yang umum digunakan, hingga tips memilih nilai yang tepat sesuai kebutuhan rangkaian.</p>
+              <div class="kmpedia-card-footer">
+                <span>👁 2.542</span>
+                <span>💬 18</span>
+              </div>
+            </div>
+            <div class="kmpedia-full-content" style="display:none;">
+              <p>Resistor adalah komponen pasif fundamental dalam elektronika yang berfungsi membatasi arus listrik dan membagi tegangan. Artikel ini membahas cara membaca kode gelang warna, perbedaan resistor fixed, variable, LDR, serta panduan memilih toleransi dan rating daya (watt) yang aman untuk modul mikrokontroler.</p>
+            </div>
+          </article>
+
+          <!-- Card 2: Mikrokontroler -->
+          <article class="kmpedia-card js-open-article-modal" data-category="iot" data-article-title="Mikrokontroler di era IoT: perbandingan ESP32, STM32, dan Arduino" data-article-category="Mikrokontroler" tabindex="0" role="button">
+            <div class="kmpedia-card-img-wrap">
+              <span class="kmpedia-card-badge">Mikrokontroler</span>
+              <img
+                src="assets/images/kmpedia-thumb-esp32.png"
+                alt="Mikrokontroler ESP32 STM32 Arduino"
+                class="kmpedia-card-img"
+                width="220"
+                height="76"
+                loading="lazy"
+              />
+            </div>
+            <div class="kmpedia-card-body">
+              <div class="kmpedia-card-meta-top">
+                <span>👤 marketing KMTek</span>
+                <span>•</span>
+                <span>15 Jan 2025</span>
+                <span>•</span>
+                <span>6 menit baca</span>
+              </div>
+              <h3 class="kmpedia-card-title">Mikrokontroler di era IoT: perbandingan ESP32, STM32, dan Arduino</h3>
+              <p class="kmpedia-card-snippet">Mengulas kelebihan, kekurangan, dan skenario penggunaan ESP32, STM32, dan Arduino agar lebih mudah menentukan mikrokontroler yang sesuai dengan proyek Anda.</p>
+              <div class="kmpedia-card-footer">
+                <span>👁 3.891</span>
+                <span>💬 27</span>
+              </div>
+            </div>
+            <div class="kmpedia-full-content" style="display:none;">
+              <p>ESP32 unggul dengan konektivitas Wi-Fi dan Bluetooth BLE bawaan serta dual-core processing yang sangat efisien untuk telemetri. STM32 menawarkan performa deterministik tinggi untuk otomasi industri, sedangkan Arduino tetap menjadi standar kemudahan pembelajaran awal.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: AI & Data Center -->
+          <article class="kmpedia-card js-open-article-modal" data-category="ai" data-article-title="Bagaimana AI dan data center mendorong percepatan inovasi industri" data-article-category="AI" tabindex="0" role="button">
+            <div class="kmpedia-card-img-wrap">
+              <span class="kmpedia-card-badge">AI</span>
+              <img
+                src="assets/images/kmpedia-thumb-datacenter.png"
+                alt="AI dan Data Center Industri"
+                class="kmpedia-card-img"
+                width="220"
+                height="76"
+                loading="lazy"
+              />
+            </div>
+            <div class="kmpedia-card-body">
+              <div class="kmpedia-card-meta-top">
+                <span>👤 marketing KMTek</span>
+                <span>•</span>
+                <span>14 Jan 2025</span>
+                <span>•</span>
+                <span>7 menit baca</span>
+              </div>
+              <h3 class="kmpedia-card-title">Bagaimana AI dan data center mendorong percepatan inovasi industri</h3>
+              <p class="kmpedia-card-snippet">Peran infrastruktur data center dalam mendukung pengembangan dan penerapan AI di berbagai sektor industri, dari manufaktur hingga layanan publik.</p>
+              <div class="kmpedia-card-footer">
+                <span>👁 4.763</span>
+                <span>💬 35</span>
+              </div>
+            </div>
+            <div class="kmpedia-full-content" style="display:none;">
+              <p>Integrasi kecerdasan buatan di sisi edge (Edge AI) memungkinkan analisis prediktif kerusakan mesin manufaktur secara real-time sebelum terjadi downtime fatal, didukung pemrosesan data telemetri di pusat data cloud yang aman.</p>
+            </div>
+          </article>
+
+          <!-- Card 4: Robotika -->
+          <article class="kmpedia-card js-open-article-modal" data-category="industri" data-article-title="Robotika untuk industri: dari otomasi hingga kolaborasi manusia-robot" data-article-category="Robotika" tabindex="0" role="button">
+            <div class="kmpedia-card-img-wrap">
+              <span class="kmpedia-card-badge">Robotika</span>
+              <img
+                src="assets/images/kmpedia-thumb-robot.png"
+                alt="Robotika industri dan cobot"
+                class="kmpedia-card-img"
+                width="220"
+                height="76"
+                loading="lazy"
+              />
+            </div>
+            <div class="kmpedia-card-body">
+              <div class="kmpedia-card-meta-top">
+                <span>👤 marketing KMTek</span>
+                <span>•</span>
+                <span>12 Jan 2025</span>
+                <span>•</span>
+                <span>6 menit baca</span>
+              </div>
+              <h3 class="kmpedia-card-title">Robotika untuk industri: dari otomasi hingga kolaborasi manusia-robot</h3>
+              <p class="kmpedia-card-snippet">Melihat perkembangan robotika di industri, manfaatnya dalam meningkatkan produktivitas, serta tren kolaborasi manusia-robot (cobots) di masa depan.</p>
+              <div class="kmpedia-card-footer">
+                <span>👁 3.417</span>
+                <span>💬 22</span>
+              </div>
+            </div>
+            <div class="kmpedia-full-content" style="display:none;">
+              <p>Collaborative Robots (Cobots) kini bekerja berdampingan dengan operator manusia di lini perakitan tanpa memerlukan sangkar pengaman kaku, memanfaatkan sensor torsi dan sistem visi komputer cerdas.</p>
+            </div>
+          </article>
+
+          <!-- Card 5: Satellite IoT -->
+          <article class="kmpedia-card js-open-article-modal" data-category="iot" data-article-title="Satellite IoT: membuka konektivitas untuk area terpencil di Indonesia" data-article-category="IoT" tabindex="0" role="button">
+            <div class="kmpedia-card-img-wrap">
+              <span class="kmpedia-card-badge">IoT</span>
+              <img
+                src="assets/images/kmpedia-thumb-satellite.png"
+                alt="Satellite IoT konektivitas terpencil"
+                class="kmpedia-card-img"
+                width="220"
+                height="76"
+                loading="lazy"
+              />
+            </div>
+            <div class="kmpedia-card-body">
+              <div class="kmpedia-card-meta-top">
+                <span>👤 marketing KMTek</span>
+                <span>•</span>
+                <span>10 Jan 2025</span>
+                <span>•</span>
+                <span>6 menit baca</span>
+              </div>
+              <h3 class="kmpedia-card-title">Satellite IoT: membuka konektivitas untuk area terpencil di Indonesia</h3>
+              <p class="kmpedia-card-snippet">Mengenal konsep Satellite IoT, cara kerjanya, serta potensinya dalam menghadirkan konektivitas yang andal untuk wilayah terpencil dan sektor-sektor strategis di Indonesia.</p>
+              <div class="kmpedia-card-footer">
+                <span>👁 3.128</span>
+                <span>💬 19</span>
+              </div>
+            </div>
+            <div class="kmpedia-full-content" style="display:none;">
+              <p>Sebagai negara kepulauan, Indonesia memiliki wilayah maritim dan perkebunan luas tanpa sinyal seluler terestrial. Teknologi satelit orbit rendah (LEO) memungkinkan perangkat telemetri KMtek mengirimkan koordinat dan kondisi sensor cuaca dari mana saja.</p>
+            </div>
+          </article>
+
+          <!-- Card 6: Energy Harvesting -->
+          <article class="kmpedia-card js-open-article-modal" data-category="energi" data-article-title="Energy harvesting: memanen energi sekitar untuk perangkat IoT" data-article-category="Energi" tabindex="0" role="button">
+            <div class="kmpedia-card-img-wrap">
+              <span class="kmpedia-card-badge">Energi</span>
+              <img
+                src="assets/images/kmpedia-thumb-solar.png"
+                alt="Energy harvesting solar IoT"
+                class="kmpedia-card-img"
+                width="220"
+                height="76"
+                loading="lazy"
+              />
+            </div>
+            <div class="kmpedia-card-body">
+              <div class="kmpedia-card-meta-top">
+                <span>👤 marketing KMTek</span>
+                <span>•</span>
+                <span>08 Jan 2025</span>
+                <span>•</span>
+                <span>5 menit baca</span>
+              </div>
+              <h3 class="kmpedia-card-title">Energy harvesting: memanen energi sekitar untuk perangkat IoT</h3>
+              <p class="kmpedia-card-snippet">Bagaimana teknologi energy harvesting bekerja, sumber energi apa saja yang bisa dimanfaatkan, dan penerapannya untuk membuat perangkat IoT lebih mandiri dan efisien.</p>
+              <div class="kmpedia-card-footer">
+                <span>👁 2.905</span>
+                <span>💬 16</span>
+              </div>
+            </div>
+            <div class="kmpedia-full-content" style="display:none;">
+              <p>Pemanenan energi mikro dari radiasi cahaya matahari, perbedaan suhu (termoelektrik), dan getaran piezoelektrik memungkinkan perangkat sensor lapangan bekerja bertahun-tahun tanpa pergantian baterai berkala.</p>
+            </div>
+          </article>
+
+          <!-- Card 7: Smart Sensor -->
+          <article class="kmpedia-card js-open-article-modal" data-category="elektronika" data-article-title="Smart sensor: kunci data real-time untuk kota dan industri yang lebih cerdas" data-article-category="Sensor" tabindex="0" role="button">
+            <div class="kmpedia-card-img-wrap">
+              <span class="kmpedia-card-badge">Sensor</span>
+              <img
+                src="assets/images/kmpedia-thumb-sensor.png"
+                alt="Smart sensor perkotaan dan industri"
+                class="kmpedia-card-img"
+                width="220"
+                height="76"
+                loading="lazy"
+              />
+            </div>
+            <div class="kmpedia-card-body">
+              <div class="kmpedia-card-meta-top">
+                <span>👤 marketing KMTek</span>
+                <span>•</span>
+                <span>06 Jan 2025</span>
+                <span>•</span>
+                <span>5 menit baca</span>
+              </div>
+              <h3 class="kmpedia-card-title">Smart sensor: kunci data real-time untuk kota dan industri yang lebih cerdas</h3>
+              <p class="kmpedia-card-snippet">Peran smart sensor dalam mengumpulkan data secara real-time, meningkatkan efisiensi operasional, dan mendukung terwujudnya smart city maupun smart industry di Indonesia.</p>
+              <div class="kmpedia-card-footer">
+                <span>👁 4.219</span>
+                <span>💬 31</span>
+              </div>
+            </div>
+            <div class="kmpedia-full-content" style="display:none;">
+              <p>Smart sensor mengintegrasikan elemen transduser dengan mikrokontroler internal untuk kalibrasi digital mandiri, kompensasi suhu otomatis, dan output sinyal terstandar Modbus RS485 yang siap dihubungkan ke SCADA.</p>
+            </div>
+          </article>
+
+          <!-- Card 8: Transformasi Digital Manufaktur -->
+          <article class="kmpedia-card js-open-article-modal" data-category="industri" data-article-title="Transformasi digital di industri manufaktur: peluang, tantangan, dan langkah awal" data-article-category="Industri" tabindex="0" role="button">
+            <div class="kmpedia-card-img-wrap">
+              <span class="kmpedia-card-badge">Industri</span>
+              <img
+                src="assets/images/kmpedia-thumb-factory.png"
+                alt="Transformasi digital manufaktur"
+                class="kmpedia-card-img"
+                width="220"
+                height="76"
+                loading="lazy"
+              />
+            </div>
+            <div class="kmpedia-card-body">
+              <div class="kmpedia-card-meta-top">
+                <span>👤 marketing KMTek</span>
+                <span>•</span>
+                <span>03 Jan 2025</span>
+                <span>•</span>
+                <span>6 menit baca</span>
+              </div>
+              <h3 class="kmpedia-card-title">Transformasi digital di industri manufaktur: peluang, tantangan, dan langkah awal</h3>
+              <p class="kmpedia-card-snippet">Mengulas bagaimana industri manufaktur dapat memulai transformasi digital, peluang efisiensi yang bisa didapatkan, serta tantangan umum yang perlu diantisipasi.</p>
+              <div class="kmpedia-card-footer">
+                <span>👁 3.764</span>
+                <span>💬 24</span>
+              </div>
+            </div>
+            <div class="kmpedia-full-content" style="display:none;">
+              <p>Langkah awal transformasi digital pabrik dimulai dari retrofitting sensor telemetri pada mesin warisan (*legacy machines*) tanpa harus mengganti keseluruhan lini produksi, menghasilkan penghematan biaya investasi hingga 70%.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- 4. PAGINATION CONTROLS -->
+        <nav class="kmpedia-pagination" aria-label="Navigasi Halaman Artikel">
+          <button class="kmpedia-page-btn" aria-label="Halaman Sebelumnya">&lsaquo;</button>
+          <button class="kmpedia-page-btn is-active" aria-current="page">1</button>
+          <button class="kmpedia-page-btn">2</button>
+          <button class="kmpedia-page-btn">3</button>
+          <button class="kmpedia-page-btn">4</button>
+          <button class="kmpedia-page-btn">5</button>
+          <button class="kmpedia-page-btn" aria-label="Halaman Berikutnya">&rsaquo;</button>
+        </nav>
+      </section>
+
+    </div>
+
+    <!-- 5. FLOATING CHAT PILL (MATCHING MOCKUP) -->
+    </main>
+
+  <!-- ============================================================
+       INTERACTIVE ARTICLE READER MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Tutup jendela modal">&times;</button>
+      <h3 class="modal-title" id="modal-title">Judul Artikel</h3>
+      <p class="modal-subtitle" id="modal-subtitle">Kategori Artikel &bull; KMPedia Knowledge Hub</p>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__newsletter-strip">
+      <div class="container footer__newsletter-inner">
+        <div class="footer__newsletter-text">
+          <strong>Tetap Terinformasi.</strong> Dapatkan rilis artikel teknologi IoT terbaru, tutorial skematik elektronika, dan wawasan industri langsung di email Anda.
+        </div>
+        <form class="footer__newsletter-form" onsubmit="event.preventDefault(); alert('Terima kasih! Anda telah terdaftar.');" aria-label="Langganan newsletter">
+          <input type="email" placeholder="Alamat email Anda" class="footer__newsletter-input" aria-label="Email untuk newsletter" required />
+          <button type="submit" class="btn btn--primary">Berlangganan</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__inner">
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="KMTek Beranda">
+            <span class="footer__logo-km">KM</span><span class="footer__logo-tek">Tek</span>
+          </a>
+          <p class="footer__tagline">
+            Menghubungkan perangkat,<br />memberdayakan industri &amp; edukasi.
+          </p>
+          <div class="footer__socials" role="list" aria-label="Tautan media sosial">
+            <a href="#" role="listitem" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="Twitter/X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.907l4.274 5.65zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" role="listitem" class="footer__social-link" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Tautan Hardware">
+          <h3 class="footer__col-heading">Hardware</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="hardware-maker.html" class="footer__link">for Maker (Mappi32)</a></li>
+            <li><a href="hardware-education.html" class="footer__link">for Education (IoT Kit)</a></li>
+            <li><a href="hardware-industry.html" class="footer__link">for Industry (Basic Mertani)</a></li>
+            <li><a href="hardware.html" class="footer__link">Lihat Semua Hardware</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Services">
+          <h3 class="footer__col-heading">Services</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="services-training.html" class="footer__link">Training &amp; Magang Guru</a></li>
+            <li><a href="services-collab.html" class="footer__link">Collaborations Project</a></li>
+            <li><a href="services-collab.html" class="footer__link">Teaching Factory (TEFA)</a></li>
+            <li><a href="services-bnsp.html" class="footer__link">Sertifikasi BNSP IoT</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Tautan Bootcamp &amp; Hub">
+          <h3 class="footer__col-heading">Bootcamp &amp; Hub</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="bootcamp-webinar.html" class="footer__link">Webinar Live Streaming</a></li>
+            <li><a href="bootcamp-ecourse.html" class="footer__link">E-Course (4 Pilar Belajar)</a></li>
+            <li><a href="kmpedia.html" class="footer__link">KMPedia Knowledge Hub</a></li>
+            <li><a href="kmpedia.html" class="footer__link">Skematik &amp; Wiring Diagram</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2026</span> PT Kreasi Mandiri Teknologi (KMtek). Seluruh hak cipta dilindungi undang-undang.
+        </p>
+        <div class="footer__meta-links">
+          <a href="#" class="footer__meta-link">Kebijakan Privasi</a>
+          <a href="#" class="footer__meta-link">Syarat &amp; Ketentuan</a>
+          <a href="#" class="footer__meta-link">Mitra Resmi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas halaman">&uarr;</button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <!-- Floating Contact Chat Pill -->
+  <a href="https://wa.me/6281234567890?text=Halo%20KMtek,%20saya%20ingin%20konsultasi%20seputar%20produk%20dan%20layanan%20IoT" target="_blank" rel="noopener" class="floating-chat-pill" aria-label="Hubungi kami melalui WhatsApp">
+    <span aria-hidden="true">&#128172;</span>
+    <span>Let's Chat</span>
+  </a>
+
+</body>
+</html>
